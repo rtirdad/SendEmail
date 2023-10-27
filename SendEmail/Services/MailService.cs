@@ -24,10 +24,12 @@ namespace SendEmail.Services
         public async Task SendEmailAsync(MailRequest mailrequest)
         {
             var email = new MimeMessage();
-            email.Sender = MailboxAddress.Parse(_mailSettings.Mail);
-            email.To.Add(MailboxAddress.Parse(mailrequest.ToEmail));
+            email.Sender = new MailboxAddress(mailrequest.SenderDisplayName, mailrequest.SenderMail);
+            //email.Sender = MailboxAddress.Parse(mailrequest.SenderAppPassword);
+            email.To.Add(new MailboxAddress(mailrequest.ToDisplayName, mailrequest.ToEmail));
             email.Subject = mailrequest.Subject;
             var builder = new BodyBuilder();
+
             if (mailrequest.Attachments != null)
             {
                 byte[] fileBytes; 
@@ -49,7 +51,7 @@ namespace SendEmail.Services
             email.Body =  builder.ToMessageBody();
             using var smtp = new MailKit.Net.Smtp.SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port,SecureSocketOptions.StartTls);
-            smtp.Authenticate(_mailSettings.Mail, _mailSettings.Password);
+            smtp.Authenticate(mailrequest.SenderMail, _mailSettings.Password);
             await smtp.SendAsync(email);
             smtp.Disconnect(true);
 
