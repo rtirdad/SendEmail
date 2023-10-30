@@ -4,6 +4,7 @@ using SendEmail.Models;
 using SendEmail.Services;
 using System;
 using System.Threading.Tasks;
+using Serilog;
 
 namespace SendEmail.Controllers
 {
