@@ -1,0 +1,116 @@
+2023-10-30 12:44:51.187 +01:00 [INF] Now listening on: https://localhost:7117
+2023-10-30 12:44:51.229 +01:00 [INF] Now listening on: http://localhost:5066
+2023-10-30 12:44:51.232 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-30 12:44:51.233 +01:00 [INF] Hosting environment: Development
+2023-10-30 12:44:51.233 +01:00 [INF] Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-10-30 12:44:51.654 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-10-30 12:44:51.917 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 267.4891ms
+2023-10-30 12:44:51.925 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-10-30 12:44:51.925 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-10-30 12:44:51.940 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 14.9613ms
+2023-10-30 12:44:51.952 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.4566ms
+2023-10-30 12:44:52.013 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-10-30 12:44:52.123 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.5592ms
+2023-10-30 12:45:05.282 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundaryjaG0nb23baSLsq2t 850
+2023-10-30 12:45:05.293 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-10-30 12:45:05.322 +01:00 [INF] Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-10-30 12:45:06.903 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-10-30 12:45:06.914 +01:00 [INF] Executed action SendEmail.Controllers.EmailController.Send (SendEmail) in 1585.6903ms
+2023-10-30 12:45:06.917 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-10-30 12:45:06.920 +01:00 [INF] HTTP POST /api/Email/Send responded 200 in 1629.3739 ms
+2023-10-30 12:45:06.928 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundaryjaG0nb23baSLsq2t 850 - 200 0 - 1645.8708ms
+2023-10-30 12:47:02.822 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/WeatherForecast - -
+2023-10-30 12:47:02.831 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 12:47:02.836 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SendEmail.WeatherForecast] Get() on controller SendEmail.Controllers.WeatherForecastController (SendEmail).
+2023-10-30 12:47:02.841 +01:00 [INF] Weather Forcasts => [{"Date":"2023-10-31","TemperatureC":-7,"TemperatureF":20,"Summary":"Scorching","$type":"WeatherForecast"},{"Date":"2023-11-01","TemperatureC":41,"TemperatureF":105,"Summary":"Scorching","$type":"WeatherForecast"},{"Date":"2023-11-02","TemperatureC":20,"TemperatureF":67,"Summary":"Cool","$type":"WeatherForecast"},{"Date":"2023-11-03","TemperatureC":9,"TemperatureF":48,"Summary":"Balmy","$type":"WeatherForecast"},{"Date":"2023-11-04","TemperatureC":34,"TemperatureF":93,"Summary":"Sweltering","$type":"WeatherForecast"}]
+2023-10-30 12:47:02.884 +01:00 [INF] Executing ObjectResult, writing value of type 'SendEmail.WeatherForecast[]'.
+2023-10-30 12:47:02.900 +01:00 [INF] Executed action SendEmail.Controllers.WeatherForecastController.Get (SendEmail) in 62.1998ms
+2023-10-30 12:47:02.903 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 12:47:02.904 +01:00 [INF] HTTP GET /WeatherForecast responded 200 in 73.5901 ms
+2023-10-30 12:47:02.907 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/WeatherForecast - - - 200 - application/json;+charset=utf-8 84.8589ms
+2023-10-30 12:47:04.214 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/WeatherForecast - -
+2023-10-30 12:47:04.216 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 12:47:04.218 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SendEmail.WeatherForecast] Get() on controller SendEmail.Controllers.WeatherForecastController (SendEmail).
+2023-10-30 12:47:04.222 +01:00 [INF] Weather Forcasts => [{"Date":"2023-10-31","TemperatureC":9,"TemperatureF":48,"Summary":"Hot","$type":"WeatherForecast"},{"Date":"2023-11-01","TemperatureC":35,"TemperatureF":94,"Summary":"Sweltering","$type":"WeatherForecast"},{"Date":"2023-11-02","TemperatureC":19,"TemperatureF":66,"Summary":"Warm","$type":"WeatherForecast"},{"Date":"2023-11-03","TemperatureC":24,"TemperatureF":75,"Summary":"Bracing","$type":"WeatherForecast"},{"Date":"2023-11-04","TemperatureC":21,"TemperatureF":69,"Summary":"Hot","$type":"WeatherForecast"}]
+2023-10-30 12:47:04.243 +01:00 [INF] Executing ObjectResult, writing value of type 'SendEmail.WeatherForecast[]'.
+2023-10-30 12:47:04.244 +01:00 [INF] Executed action SendEmail.Controllers.WeatherForecastController.Get (SendEmail) in 21.7655ms
+2023-10-30 12:47:04.246 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 12:47:04.249 +01:00 [INF] HTTP GET /WeatherForecast responded 200 in 32.9292 ms
+2023-10-30 12:47:04.253 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/WeatherForecast - - - 200 - application/json;+charset=utf-8 38.9931ms
+2023-10-30 13:26:46.927 +01:00 [INF] Now listening on: https://localhost:7117
+2023-10-30 13:26:46.957 +01:00 [INF] Now listening on: http://localhost:5066
+2023-10-30 13:26:46.960 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-30 13:26:46.961 +01:00 [INF] Hosting environment: Development
+2023-10-30 13:26:46.962 +01:00 [INF] Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-10-30 13:26:47.476 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-10-30 13:26:47.729 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 255.5416ms
+2023-10-30 13:26:47.733 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-10-30 13:26:47.737 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-10-30 13:26:47.758 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 24.2460ms
+2023-10-30 13:26:47.768 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.7742ms
+2023-10-30 13:26:47.833 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-10-30 13:26:47.952 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.1819ms
+2023-10-30 13:27:09.126 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/WeatherForecast - -
+2023-10-30 13:27:09.137 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 13:27:09.149 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SendEmail.WeatherForecast] Get() on controller SendEmail.Controllers.WeatherForecastController (SendEmail).
+2023-10-30 13:27:09.155 +01:00 [INF] Weather Forcasts => [{"Date":"2023-10-31","TemperatureC":-12,"TemperatureF":11,"Summary":"Warm","$type":"WeatherForecast"},{"Date":"2023-11-01","TemperatureC":48,"TemperatureF":118,"Summary":"Bracing","$type":"WeatherForecast"},{"Date":"2023-11-02","TemperatureC":22,"TemperatureF":71,"Summary":"Cool","$type":"WeatherForecast"},{"Date":"2023-11-03","TemperatureC":4,"TemperatureF":39,"Summary":"Balmy","$type":"WeatherForecast"},{"Date":"2023-11-04","TemperatureC":48,"TemperatureF":118,"Summary":"Warm","$type":"WeatherForecast"}]
+2023-10-30 13:27:09.191 +01:00 [INF] Executing ObjectResult, writing value of type 'SendEmail.WeatherForecast[]'.
+2023-10-30 13:27:09.206 +01:00 [INF] Executed action SendEmail.Controllers.WeatherForecastController.Get (SendEmail) in 51.3091ms
+2023-10-30 13:27:09.209 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 13:27:09.211 +01:00 [INF] HTTP GET /WeatherForecast responded 200 in 75.9953 ms
+2023-10-30 13:27:09.214 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/WeatherForecast - - - 200 - application/json;+charset=utf-8 88.2439ms
+2023-10-30 13:27:11.260 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/WeatherForecast - -
+2023-10-30 13:27:11.262 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 13:27:11.264 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SendEmail.WeatherForecast] Get() on controller SendEmail.Controllers.WeatherForecastController (SendEmail).
+2023-10-30 13:27:11.269 +01:00 [INF] Weather Forcasts => [{"Date":"2023-10-31","TemperatureC":-6,"TemperatureF":22,"Summary":"Sweltering","$type":"WeatherForecast"},{"Date":"2023-11-01","TemperatureC":40,"TemperatureF":103,"Summary":"Cool","$type":"WeatherForecast"},{"Date":"2023-11-02","TemperatureC":22,"TemperatureF":71,"Summary":"Cool","$type":"WeatherForecast"},{"Date":"2023-11-03","TemperatureC":47,"TemperatureF":116,"Summary":"Freezing","$type":"WeatherForecast"},{"Date":"2023-11-04","TemperatureC":-7,"TemperatureF":20,"Summary":"Balmy","$type":"WeatherForecast"}]
+2023-10-30 13:27:11.284 +01:00 [INF] Executing ObjectResult, writing value of type 'SendEmail.WeatherForecast[]'.
+2023-10-30 13:27:11.288 +01:00 [INF] Executed action SendEmail.Controllers.WeatherForecastController.Get (SendEmail) in 20.984ms
+2023-10-30 13:27:11.289 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 13:27:11.290 +01:00 [INF] HTTP GET /WeatherForecast responded 200 in 28.0008 ms
+2023-10-30 13:27:11.292 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/WeatherForecast - - - 200 - application/json;+charset=utf-8 32.1193ms
+2023-10-30 13:27:14.982 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/WeatherForecast - -
+2023-10-30 13:27:14.984 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 13:27:14.985 +01:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SendEmail.WeatherForecast] Get() on controller SendEmail.Controllers.WeatherForecastController (SendEmail).
+2023-10-30 13:27:14.989 +01:00 [INF] Weather Forcasts => [{"Date":"2023-10-31","TemperatureC":48,"TemperatureF":118,"Summary":"Warm","$type":"WeatherForecast"},{"Date":"2023-11-01","TemperatureC":-18,"TemperatureF":0,"Summary":"Warm","$type":"WeatherForecast"},{"Date":"2023-11-02","TemperatureC":50,"TemperatureF":121,"Summary":"Sweltering","$type":"WeatherForecast"},{"Date":"2023-11-03","TemperatureC":23,"TemperatureF":73,"Summary":"Cool","$type":"WeatherForecast"},{"Date":"2023-11-04","TemperatureC":34,"TemperatureF":93,"Summary":"Hot","$type":"WeatherForecast"}]
+2023-10-30 13:27:15.004 +01:00 [INF] Executing ObjectResult, writing value of type 'SendEmail.WeatherForecast[]'.
+2023-10-30 13:27:15.005 +01:00 [INF] Executed action SendEmail.Controllers.WeatherForecastController.Get (SendEmail) in 15.5923ms
+2023-10-30 13:27:15.007 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.WeatherForecastController.Get (SendEmail)'
+2023-10-30 13:27:15.010 +01:00 [INF] HTTP GET /WeatherForecast responded 200 in 26.8265 ms
+2023-10-30 13:27:15.013 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/WeatherForecast - - - 200 - application/json;+charset=utf-8 31.3101ms
+2023-10-30 13:29:54.663 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundaryhX0niqGAxgyCxigL 681
+2023-10-30 13:29:54.665 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-10-30 13:29:54.683 +01:00 [INF] Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-10-30 13:29:56.111 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-10-30 13:29:56.114 +01:00 [INF] Executed action SendEmail.Controllers.EmailController.Send (SendEmail) in 1425.0922ms
+2023-10-30 13:29:56.117 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-10-30 13:29:56.119 +01:00 [INF] HTTP POST /api/Email/Send responded 200 in 1454.0891 ms
+2023-10-30 13:29:56.122 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundaryhX0niqGAxgyCxigL 681 - 200 0 - 1459.7749ms
+2023-10-30 13:38:01.631 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundaryoseZBDqlnsd3iFTV 850
+2023-10-30 13:38:01.636 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-10-30 13:38:01.638 +01:00 [INF] Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-10-30 13:38:02.898 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-10-30 13:38:02.901 +01:00 [INF] Executed action SendEmail.Controllers.EmailController.Send (SendEmail) in 1261.0345ms
+2023-10-30 13:38:02.904 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-10-30 13:38:02.904 +01:00 [INF] HTTP POST /api/Email/Send responded 200 in 1268.4370 ms
+2023-10-30 13:38:02.907 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundaryoseZBDqlnsd3iFTV 850 - 200 0 - 1279.0789ms
+2023-10-30 13:43:27.804 +01:00 [INF] Now listening on: https://localhost:7117
+2023-10-30 13:43:27.832 +01:00 [INF] Now listening on: http://localhost:5066
+2023-10-30 13:43:27.835 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-30 13:43:27.836 +01:00 [INF] Hosting environment: Development
+2023-10-30 13:43:27.836 +01:00 [INF] Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-10-30 13:43:28.642 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-10-30 13:43:28.895 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-10-30 13:43:28.895 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-10-30 13:43:28.910 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 269.4271ms
+2023-10-30 13:43:28.911 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 15.4922ms
+2023-10-30 13:43:28.925 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.1002ms
+2023-10-30 13:43:28.999 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-10-30 13:43:29.112 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.2401ms
+2023-10-30 13:48:16.307 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundarycnFrkjwaiGKz38Qh 681
+2023-10-30 13:48:16.317 +01:00 [INF] Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-10-30 13:48:16.342 +01:00 [INF] Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-10-30 13:48:18.102 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-10-30 13:48:18.109 +01:00 [INF] Executed action SendEmail.Controllers.EmailController.Send (SendEmail) in 1757.4671ms
+2023-10-30 13:48:18.113 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-10-30 13:48:18.116 +01:00 [INF] HTTP POST /api/Email/Send responded 200 in 1804.0477 ms
+2023-10-30 13:48:18.118 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundarycnFrkjwaiGKz38Qh 681 - 200 0 - 1812.0639ms

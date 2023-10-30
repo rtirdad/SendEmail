@@ -20,10 +20,19 @@ builder.Services.AddCors(c =>
 });
 
 Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .WriteTo.Console()
-    .WriteTo.File("logs/myWeatherLog-.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger();
+    .ReadFrom.Configuration(builder.Configuration).CreateLogger();
+
+try
+{
+
+}
+catch
+{
+
+}
+
+builder.Host.UseSerilog();
+   
 
 var app = builder.Build();
 
@@ -33,6 +42,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

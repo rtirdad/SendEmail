@@ -6,6 +6,5 @@ namespace SendEmail.Services
     public interface IMailService
     {
         Task SendEmailAsync(MailRequest mailrequest);
-
     }
 }
