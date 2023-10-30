@@ -114,3 +114,16 @@
 2023-10-30 13:48:18.113 +01:00 [INF] Executed endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
 2023-10-30 13:48:18.116 +01:00 [INF] HTTP POST /api/Email/Send responded 200 in 1804.0477 ms
 2023-10-30 13:48:18.118 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7117/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundarycnFrkjwaiGKz38Qh 681 - 200 0 - 1812.0639ms
+2023-10-30 16:03:55.877 +01:00 [INF] Now listening on: https://localhost:7117
+2023-10-30 16:03:55.909 +01:00 [INF] Now listening on: http://localhost:5066
+2023-10-30 16:03:55.913 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-30 16:03:55.914 +01:00 [INF] Hosting environment: Development
+2023-10-30 16:03:55.915 +01:00 [INF] Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-10-30 16:03:56.588 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-10-30 16:03:56.837 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 250.4842ms
+2023-10-30 16:03:56.848 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-10-30 16:03:56.848 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-10-30 16:03:56.863 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 14.8725ms
+2023-10-30 16:03:56.878 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.3534ms
+2023-10-30 16:03:57.057 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-10-30 16:03:57.170 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.1844ms

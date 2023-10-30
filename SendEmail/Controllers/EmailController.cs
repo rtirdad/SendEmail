@@ -13,10 +13,12 @@ namespace SendEmail.Controllers
     public class EmailController : ControllerBase
     {
         private readonly IMailService _mailService;
+        private readonly ILogger<EmailController> _logger;
 
-        public EmailController(SendEmail.Services.IMailService mailService)
+        public EmailController(SendEmail.Services.IMailService mailService, ILogger<EmailController> logger)
         {
             _mailService = mailService;
+            _logger = logger;
         }
 
         [HttpPost("Send")]
