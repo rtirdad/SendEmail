@@ -36,3 +36,13 @@ C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\obj\Debug\net7.0\refint\SendEmai
 C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\obj\Debug\net7.0\SendEmail.pdb
 C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\obj\Debug\net7.0\SendEmail.genruntimeconfig.cache
 C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\obj\Debug\net7.0\ref\SendEmail.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\bin\Debug\net7.0\Serilog.Sinks.File.dll
