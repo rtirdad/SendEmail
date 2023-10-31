@@ -4,6 +4,7 @@ using SendEmail.Models;
 using SendEmail.Services;
 using System;
 using System.Threading.Tasks;
+using Serilog;
 
 namespace SendEmail.Controllers
 {
@@ -12,10 +13,12 @@ namespace SendEmail.Controllers
     public class EmailController : ControllerBase
     {
         private readonly IMailService _mailService;
+        private readonly ILogger<EmailController> _logger;
 
-        public EmailController(IMailService mailService)
+        public EmailController(SendEmail.Services.IMailService mailService, ILogger<EmailController> logger)
         {
             _mailService = mailService;
+            _logger = logger;
         }
 
         [HttpPost("Send")]
@@ -24,11 +27,14 @@ namespace SendEmail.Controllers
             try
             {
                 await _mailService.SendEmailAsync(request);
+                _logger.LogInformation("Email sent successfully :)");
                 return Ok();
+
             }
             catch (Exception ex)
             {
-                throw ex;
+                _logger.LogError("An error occured, email send unsuccessfully :(");
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occured. The Mail could not be sent.");
             }
         }
     }
