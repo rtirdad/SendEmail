@@ -13,7 +13,7 @@ namespace SendEmail.Controllers
     {
         private readonly IMailService _mailService;
 
-        public EmailController(SendEmail.Services.IMailService mailService)
+        public EmailController(IMailService mailService)
         {
             _mailService = mailService;
         }
