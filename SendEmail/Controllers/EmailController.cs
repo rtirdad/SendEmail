@@ -15,7 +15,7 @@ namespace SendEmail.Controllers
         private readonly IMailService _mailService;
         private readonly ILogger<EmailController> _logger;
 
-        public EmailController(SendEmail.Services.IMailService mailService, ILogger<EmailController> logger)
+        public EmailController(IMailService mailService, ILogger<EmailController> logger)
         {
             _mailService = mailService;
             _logger = logger;
