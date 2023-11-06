@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\SendEmail.csproj": {}
+    "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\EmailTesting\\EmailTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\SendEmail.csproj": {
+    "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\EmailTesting\\EmailTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\SendEmail.csproj",
-        "projectName": "SendEmail",
-        "projectPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\SendEmail.csproj",
+        "projectUniqueName": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\EmailTesting\\EmailTesting.csproj",
+        "projectName": "EmailTesting",
+        "projectPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\EmailTesting\\EmailTesting.csproj",
         "packagesPath": "C:\\Users\\CityGIS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\obj\\",
+        "outputPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\EmailTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CityGIS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,29 +44,29 @@
               "target": "Package",
               "version": "[6.12.0, )"
             },
-            "MailKit": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
             "Microsoft.AspNetCore.Mvc.Testing": {
               "target": "Package",
               "version": "[7.0.13, )"
             },
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[7.0.13, )"
+              "version": "[17.7.1, )"
             },
             "NUnit": {
               "target": "Package",
               "version": "[3.14.0, )"
             },
-            "Serilog.AspNetCore": {
+            "NUnit.Analyzers": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[3.6.1, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[4.4.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.2.0, )"
             }
           },
           "imports": [
@@ -81,9 +81,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
