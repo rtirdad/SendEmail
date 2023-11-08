@@ -23,7 +23,7 @@ namespace SendEmail.Services
 
         public async Task SendEmailAsync(MailRequest mailrequest)
         {
-           
+          
             /*using var smtp = new MailKit.Net.Smtp.SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
@@ -34,10 +34,20 @@ namespace SendEmail.Services
 
     public class FakeMailSender : IMailSender
     {
+        public string Host { get; set; }
+
+        public string Port { get; set; }
+
         public Task SendFakeEmailAsync(MailRequest mailRequest)
         {
             throw new NotImplementedException();
         }
+
+
+        /*public class SendFakeEmailAsync(MailRequest mailRequest)
+        {
+            throw new NotImplementedException();
+        }*/
     }
 }
     

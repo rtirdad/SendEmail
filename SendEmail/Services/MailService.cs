@@ -52,13 +52,13 @@ namespace SendEmail.Services
             builder.HtmlBody = mailrequest.Body;
             email.Body = builder.ToMessageBody();
 
-            //await _mailSender.SendFakeEmailAsync(mailrequest);
+            await _mailSender.SendFakeEmailAsync(mailrequest);
 
-            using var smtp = new MailKit.Net.Smtp.SmtpClient();
+            /*using var smtp = new MailKit.Net.Smtp.SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
             await smtp.SendAsync(email);
-            smtp.Disconnect(true);
+            smtp.Disconnect(true);*/
         }
     }
 }

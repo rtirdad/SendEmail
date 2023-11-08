@@ -1,5 +1,9 @@
+using FluentAssertions.Common;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.AspNetCore.TestHost;
+using Microsoft.Extensions.DependencyInjection;
 using SendEmail.Models;
 using SendEmail.Services;
 using System.Net.Http.Json;
@@ -8,13 +12,14 @@ namespace EmailTesting
 {
     public class Tests
     {
-      //private readonly MailSender _sender;
+        //private readonly FakeMailSender = new ();
 
         [Test]
         public async Task Test1()
         {
             //Assign
-            var factory = new WebApplicationFactory<SendEmail.Program>();
+
+            var factory = new WebApplicationFactory<SendEmail.Program>().WithWebHostBuilder(builder => Setup(builder));
 
 
             //Act
@@ -41,9 +46,20 @@ namespace EmailTesting
             };
 
             //Assert
-            var respondse = httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
-            respondse.Status.Equals(404);
+            var respondse = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
+            
  
         }
+        public void Setup(IWebHostBuilder builder)
+        {
+            builder.ConfigureTestServices(services =>
+
+            {
+                services.AddSingleton<IMailSender, FakeMailSender>();
+
+            });
+
+        }
+
     }
 }
