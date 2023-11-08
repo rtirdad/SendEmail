@@ -31,16 +31,16 @@ namespace SendEmail.Services
             smtp.Disconnect(true);*/
         }
     }
-
     public class FakeMailSender : IMailSender
     {
         public string Host { get; set; }
 
         public string Port { get; set; }
 
+
         public Task SendFakeEmailAsync(MailRequest mailRequest)
         {
-            throw new NotImplementedException();
+           throw new NotImplementedException();
         }
 
 

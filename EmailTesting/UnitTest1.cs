@@ -15,7 +15,7 @@ namespace EmailTesting
         //private readonly FakeMailSender = new ();
 
         [Test]
-        public async Task Test1()
+        public async Task toEmailShould()
         {
             //Assign
 
@@ -47,8 +47,8 @@ namespace EmailTesting
 
             //Assert
             var respondse = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
+            respondse.EnsureSuccessStatusCode();
             
- 
         }
         public void Setup(IWebHostBuilder builder)
         {
