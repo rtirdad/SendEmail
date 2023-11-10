@@ -31,7 +31,7 @@ namespace SendEmail.Controllers
                 return Ok();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 _logger.LogError("An error occured, email send unsuccessfully :(");
                 return StatusCode(StatusCodes.Status500InternalServerError, "An error occured. The Mail could not be sent.");

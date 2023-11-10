@@ -15,10 +15,13 @@ namespace SendEmail.Services
     public class MailService : IMailService
     {
         private readonly MailSettings _mailSettings;
+        private readonly IMailService _mailService;
+        
 
         public MailService(IOptions<MailSettings> options)
         {
             _mailSettings = options.Value;
+            //_mailService = mailService;
         }
 
         public async Task SendEmailAsync(MailRequest mailrequest)
@@ -49,11 +52,15 @@ namespace SendEmail.Services
             }
             builder.HtmlBody = mailrequest.Body;
             email.Body = builder.ToMessageBody();
-            using var smtp = new MailKit.Net.Smtp.SmtpClient();
+
+            await _mailService.SendEmailAsync(mailrequest);
+
+
+            /*using var smtp = new MailKit.Net.Smtp.SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
             await smtp.SendAsync(email);
-            smtp.Disconnect(true);
+            smtp.Disconnect(true);*/
         }
     }
 }

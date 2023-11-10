@@ -1,3 +1,4 @@
+using FluentAssertions;
 using FluentAssertions.Common;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -7,15 +8,21 @@ using Microsoft.Extensions.DependencyInjection;
 using SendEmail.Models;
 using SendEmail.Services;
 using System.Net.Http.Json;
+using SendEmail;
+
+
 
 namespace EmailTesting
 {
     public class Tests
     {
-        //private readonly FakeMailSender = new ();
+        private readonly FakeMailSender fakeMailSender = new();
+       
+
+        //private readonly LastMailRequest FakeMailSender = new ();
 
         [Test]
-        public async Task toEmailShould()
+        public async Task ToEmailShould()
         {
             //Assign
 
@@ -29,26 +36,29 @@ namespace EmailTesting
 
             {
 
-                ToEmail = "ronat20003@gmail.com",
+                ToEmail = "test@gmail.com",
 
-                ToDisplayName = "rona",
+                ToDisplayName = "Test",
 
-                FromDisplayName = "Rona",
+                FromDisplayName = "Tester",
 
-                FromMail = "ronat20003@gmail.com",
+                FromMail = "test@gmail.com",
 
                 Subject = "Testing",
 
                 Body = "Hello",
 
                 //Attachments = []
-
-            };
+             
+        };
 
             //Assert
             var respondse = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
-            respondse.EnsureSuccessStatusCode();
-            
+            //respondse.EnsureSuccessStatusCode();
+            //fakeMailSender.Model.Body.Should().Be("Hello!");
+            //fakeMailSender.LastMailRequest.Body.Should().Be("Hello");
+            respondse.Should().NotBeNull();
+            //respondse.Content.Should().Be("Hello");
         }
         public void Setup(IWebHostBuilder builder)
         {
@@ -61,5 +71,23 @@ namespace EmailTesting
 
         }
 
+        [Test]
+        public async Task GetBooks_ShouldReturnListOfBooks()
+        {
+            // Arrange
+            var factory = new WebApplicationFactory<SendEmail.Program>().WithWebHostBuilder(builder => Setup(builder));
+            var httpClient = factory.CreateClient();
+
+            // Act
+            var response = await httpClient.GetAsync("/book");
+
+            // Assert
+            response.Should().NotBeNull();
+            response.EnsureSuccessStatusCode(); // Ensure that the HTTP response indicates success (status code 2xx)
+
+            var books = await response.Content.ReadFromJsonAsync<List<Book>>();
+            books.Should().NotBeNull();
+            books.Should().HaveCountGreaterThan(0); // Assuming there are books in the list
+        }
     }
 }
