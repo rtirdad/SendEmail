@@ -10,9 +10,8 @@ using MimeKit.Text;
 
 namespace SendEmail.Services
 {
-    public class FakeMail : IMailSender
+    public class FakeMail : IMailService
     {
-
 
 
         public void MailService() 
@@ -24,9 +23,9 @@ namespace SendEmail.Services
             smtp.Disconnect(true);*/
         }
 
-        public async Task SendFakeEmailAsync(MailRequest mailRequest)
+        public Task SendEmailAsync(MailRequest mailrequest)
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

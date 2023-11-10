@@ -15,12 +15,12 @@ namespace SendEmail.Services
     public class MailService : IMailService
     {
         private readonly MailSettings _mailSettings;
-        private readonly IMailSender _mailSender;
+        private readonly IMailService _mailService;
 
-        public MailService(IOptions<MailSettings> options, IMailSender mailSender)
+        public MailService(IOptions<MailSettings> options, IMailService mailService)
         {
             _mailSettings = options.Value;
-            _mailSender = mailSender;
+            _mailService = mailService;
         }
 
         public async Task SendEmailAsync(MailRequest mailrequest)
@@ -52,7 +52,10 @@ namespace SendEmail.Services
             builder.HtmlBody = mailrequest.Body;
             email.Body = builder.ToMessageBody();
 
-            await _mailSender.SendFakeEmailAsync(mailrequest);
+            await _mailService.SendEmailAsync(mailrequest);
+
+            var decoyMail = new DecoyMail();
+            await decoyMail.SendEmailAsync(mailrequest);
 
             /*using var smtp = new MailKit.Net.Smtp.SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
