@@ -10,12 +10,10 @@
 
         public string FromMail { get; set; }
 
-        //public string FromAppPassword { get; set; }
-
         public string Subject { get; set; }
 
         public string Body { get; set; }
 
-        public IFormFileCollection Attachments { get; set; }
+        public IFormFileCollection? Attachments { get; set; }
     }
 }

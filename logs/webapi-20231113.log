@@ -1,0 +1,1265 @@
+2023-11-13 10:02:26.489 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 10:02:26.549 +01:00  DBG  Hosting starting
+2023-11-13 10:02:26.587 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 10:02:26.587 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 10:02:26.587 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 10:02:26.587 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 10:02:26.588 +01:00  INF  Hosting environment: Development
+2023-11-13 10:02:26.588 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 10:02:26.588 +01:00  DBG  Hosting started
+2023-11-13 10:02:26.605 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 10:02:26.690 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 10:02:26.738 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 10:02:26.739 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:02:26.828 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 10:02:27.017 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 10:02:27.019 +01:00  DBG  Connection ID "18230571293206380556" disconnecting.
+2023-11-13 10:02:27.019 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 415.8796ms
+2023-11-13 10:02:27.026 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 10:02:27.027 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 10:02:27.029 +01:00  DBG  Connection ID "18302628891539275781" disconnecting.
+2023-11-13 10:02:27.030 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 3.3656ms
+2023-11-13 10:02:27.087 +01:00  DBG  Connection ID "18374686507052040275" disconnecting.
+2023-11-13 10:02:27.087 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.2439ms
+2023-11-13 10:02:27.137 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 10:02:27.138 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 10:02:27.138 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:02:27.255 +01:00  DBG  Connection ID "18158513707758387211" disconnecting.
+2023-11-13 10:02:27.255 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.4311ms
+2023-11-13 10:08:10.406 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 10:08:10.486 +01:00  DBG  Hosting starting
+2023-11-13 10:08:10.708 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 10:08:10.708 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 10:08:10.708 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 10:08:10.708 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 10:08:10.708 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 10:08:10.709 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 10:08:10.709 +01:00  INF  Hosting environment: Development
+2023-11-13 10:08:10.709 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 10:08:10.709 +01:00  DBG  Hosting started
+2023-11-13 10:08:10.769 +01:00  DBG  Connection id "0HMV4507IVUUK" accepted.
+2023-11-13 10:08:10.769 +01:00  DBG  Connection id "0HMV4507IVUUL" accepted.
+2023-11-13 10:08:10.770 +01:00  DBG  Connection id "0HMV4507IVUUK" started.
+2023-11-13 10:08:10.770 +01:00  DBG  Connection id "0HMV4507IVUUL" started.
+2023-11-13 10:08:11.085 +01:00  DBG  Connection id "0HMV4507IVUUM" accepted.
+2023-11-13 10:08:11.085 +01:00  DBG  Connection id "0HMV4507IVUUM" started.
+2023-11-13 10:08:11.149 +01:00  DBG  Connection 0HMV4507IVUUM established using the following protocol: "Tls12"
+2023-11-13 10:08:11.259 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 10:08:11.283 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 10:08:11.377 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 10:08:11.377 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:08:12.118 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 10:08:12.293 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 10:08:12.302 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 1040.6304ms
+2023-11-13 10:08:12.305 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 10:08:12.305 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 10:08:12.334 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 29.0043ms
+2023-11-13 10:08:12.375 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.2329ms
+2023-11-13 10:08:12.574 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 10:08:12.575 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 10:08:12.575 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:08:12.734 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.9095ms
+2023-11-13 10:08:14.157 +01:00  DBG  Connection id "0HMV4507IVUUM" received FIN.
+2023-11-13 10:08:14.160 +01:00  DBG  Connection id "0HMV4507IVUUM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 10:08:14.162 +01:00  DBG  Connection id "0HMV4507IVUUM" is closed. The last processed stream ID was 7.
+2023-11-13 10:08:14.164 +01:00  DBG  The connection queue processing loop for 0HMV4507IVUUM completed.
+2023-11-13 10:08:14.170 +01:00  DBG  Connection id "0HMV4507IVUUM" stopped.
+2023-11-13 10:08:20.784 +01:00  DBG  Authentication of the HTTPS connection timed out.
+2023-11-13 10:08:20.784 +01:00  DBG  Authentication of the HTTPS connection timed out.
+2023-11-13 10:08:20.784 +01:00  DBG  Connection id "0HMV4507IVUUL" stopped.
+2023-11-13 10:08:20.784 +01:00  DBG  Connection id "0HMV4507IVUUK" stopped.
+2023-11-13 10:08:20.784 +01:00  DBG  Connection id "0HMV4507IVUUK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 10:08:20.784 +01:00  DBG  Connection id "0HMV4507IVUUL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 10:49:00.032 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 10:49:00.176 +01:00  DBG  Hosting starting
+2023-11-13 10:49:00.423 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 10:49:00.423 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 10:49:00.423 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 10:49:00.423 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 10:49:00.423 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 10:49:00.423 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 10:49:00.424 +01:00  INF  Hosting environment: Development
+2023-11-13 10:49:00.424 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 10:49:00.424 +01:00  DBG  Hosting started
+2023-11-13 10:49:00.752 +01:00  DBG  Connection id "0HMV45N1NRGLN" accepted.
+2023-11-13 10:49:00.752 +01:00  DBG  Connection id "0HMV45N1NRGLO" accepted.
+2023-11-13 10:49:00.753 +01:00  DBG  Connection id "0HMV45N1NRGLN" started.
+2023-11-13 10:49:00.753 +01:00  DBG  Connection id "0HMV45N1NRGLO" started.
+2023-11-13 10:49:00.774 +01:00  DBG  Connection id "0HMV45N1NRGLO" received FIN.
+2023-11-13 10:49:00.774 +01:00  DBG  Connection id "0HMV45N1NRGLN" received FIN.
+2023-11-13 10:49:00.795 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 10:49:00.795 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 10:49:00.819 +01:00  DBG  Connection id "0HMV45N1NRGLN" stopped.
+2023-11-13 10:49:00.819 +01:00  DBG  Connection id "0HMV45N1NRGLO" stopped.
+2023-11-13 10:49:00.823 +01:00  DBG  Connection id "0HMV45N1NRGLO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 10:49:00.823 +01:00  DBG  Connection id "0HMV45N1NRGLN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 10:49:01.065 +01:00  DBG  Connection id "0HMV45N1NRGLP" accepted.
+2023-11-13 10:49:01.066 +01:00  DBG  Connection id "0HMV45N1NRGLP" started.
+2023-11-13 10:49:01.131 +01:00  DBG  Connection 0HMV45N1NRGLP established using the following protocol: "Tls12"
+2023-11-13 10:49:01.226 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 10:49:01.271 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 10:49:01.357 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 10:49:01.358 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:49:01.467 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 10:49:01.600 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 10:49:01.605 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 380.8832ms
+2023-11-13 10:49:01.605 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 10:49:01.605 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 10:49:01.617 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 11.5612ms
+2023-11-13 10:49:01.636 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.7505ms
+2023-11-13 10:49:01.842 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 10:49:01.843 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 10:49:01.843 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:49:01.999 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.1344ms
+2023-11-13 10:49:02.598 +01:00  DBG  Connection id "0HMV45N1NRGLP" received FIN.
+2023-11-13 10:49:02.600 +01:00  DBG  The connection queue processing loop for 0HMV45N1NRGLP completed.
+2023-11-13 10:49:02.602 +01:00  DBG  Connection id "0HMV45N1NRGLP" is closed. The last processed stream ID was 7.
+2023-11-13 10:49:02.602 +01:00  DBG  Connection id "0HMV45N1NRGLP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 10:49:02.612 +01:00  DBG  Connection id "0HMV45N1NRGLP" stopped.
+2023-11-13 10:49:30.480 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 10:49:30.557 +01:00  DBG  Hosting starting
+2023-11-13 10:49:30.640 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 10:49:30.640 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 10:49:30.640 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 10:49:30.641 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 10:49:30.641 +01:00  INF  Hosting environment: Development
+2023-11-13 10:49:30.641 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 10:49:30.641 +01:00  DBG  Hosting started
+2023-11-13 10:49:30.683 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 10:49:30.710 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 10:49:30.767 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 10:49:30.767 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:49:30.854 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 10:49:30.985 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 10:49:30.996 +01:00  DBG  Connection ID "18374686502757072909" disconnecting.
+2023-11-13 10:49:30.997 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 10:49:31.000 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 10:49:31.001 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 315.1463ms
+2023-11-13 10:49:31.005 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 8.3212ms
+2023-11-13 10:49:31.006 +01:00  DBG  Connection ID "18230571306091282441" disconnecting.
+2023-11-13 10:49:31.036 +01:00  DBG  Connection ID "18158513712053354497" disconnecting.
+2023-11-13 10:49:31.037 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3746ms
+2023-11-13 10:49:31.112 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 10:49:31.113 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 10:49:31.113 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:49:31.240 +01:00  DBG  Connection ID "18302628913014112272" disconnecting.
+2023-11-13 10:49:31.240 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.4725ms
+2023-11-13 10:49:38.975 +01:00  INF  Request starting HTTP/1.1 POST https://localhost:44375/api/Email/Send application/x-www-form-urlencoded 203
+2023-11-13 10:49:38.980 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 10:49:38.983 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 10:49:38.983 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 10:49:38.987 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 10:49:38.990 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 10:49:39.015 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 10:49:39.018 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 10:49:39.019 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 10:49:39.019 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 10:49:39.019 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 10:49:39.019 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 10:49:39.021 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 10:49:39.025 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 10:49:39.038 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 10:49:39.041 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 10:49:39.043 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 10:49:39.044 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 10:49:39.046 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 10:49:39.046 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 10:49:39.046 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 10:49:39.046 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 10:49:39.046 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 10:49:39.046 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 10:49:39.046 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 10:49:39.046 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 10:49:39.046 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 10:49:39.046 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 10:49:39.047 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 10:49:39.048 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 10:49:39.048 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 10:49:39.048 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 10:49:39.048 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 10:49:39.048 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 10:49:39.048 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 10:49:39.058 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 10:49:39.059 +01:00  DBG  The request has model state errors, returning an error response.
+2023-11-13 10:49:39.060 +01:00  DBG  Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2023-11-13 10:49:39.062 +01:00  DBG  List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-11-13 10:49:39.063 +01:00  DBG  No information found on request to perform content negotiation.
+2023-11-13 10:49:39.063 +01:00  DBG  Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2023-11-13 10:49:39.064 +01:00  DBG  Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2023-11-13 10:49:39.064 +01:00  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-11-13 10:49:39.079 +01:00  INF  Executed action SendEmail.Controllers.EmailController.Send (SendEmail) in 56.6634ms
+2023-11-13 10:49:39.080 +01:00  INF  Executed endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 10:49:39.080 +01:00  INF  Request finished HTTP/1.1 POST https://localhost:44375/api/Email/Send application/x-www-form-urlencoded 203 - 400 - application/problem+json;+charset=utf-8 104.9237ms
+2023-11-13 10:50:16.079 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 10:50:16.152 +01:00  DBG  Hosting starting
+2023-11-13 10:50:16.233 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 10:50:16.233 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 10:50:16.233 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 10:50:16.234 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 10:50:16.240 +01:00  INF  Hosting environment: Development
+2023-11-13 10:50:16.240 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 10:50:16.240 +01:00  DBG  Hosting started
+2023-11-13 10:50:16.271 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 10:50:16.297 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 10:50:16.355 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 10:50:16.355 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:50:16.456 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 10:50:16.590 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 10:50:16.598 +01:00  DBG  Connection ID "18302628908719144962" disconnecting.
+2023-11-13 10:50:16.599 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 329.3682ms
+2023-11-13 10:50:16.606 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 10:50:16.614 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 10:50:16.614 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 4.0182ms
+2023-11-13 10:50:16.614 +01:00  DBG  Connection ID "18230571293206380562" disconnecting.
+2023-11-13 10:50:16.634 +01:00  DBG  Connection ID "18230571293206380564" disconnecting.
+2023-11-13 10:50:16.634 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.3363ms
+2023-11-13 10:50:16.713 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 10:50:16.714 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 10:50:16.714 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:50:16.834 +01:00  DBG  Connection ID "18086456113720459283" disconnecting.
+2023-11-13 10:50:16.834 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 121.1735ms
+2023-11-13 10:50:23.626 +01:00  INF  Request starting HTTP/1.1 POST https://localhost:44375/api/Email/Send application/x-www-form-urlencoded 203
+2023-11-13 10:50:23.632 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 10:50:23.635 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 10:50:23.636 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 10:50:23.639 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 10:50:23.642 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 10:50:23.661 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 10:50:23.664 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 10:50:23.664 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 10:50:23.664 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 10:50:23.664 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 10:50:23.664 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 10:50:23.666 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 10:50:23.667 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 10:50:23.679 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 10:50:23.681 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 10:50:23.684 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 10:50:23.684 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 10:50:23.686 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 10:50:23.687 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 10:50:23.687 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 10:50:23.687 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 10:50:23.687 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 10:50:23.687 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 10:50:23.687 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 10:50:23.687 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 10:50:23.687 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 10:50:23.687 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 10:50:23.689 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 10:50:23.690 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 10:50:23.690 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 10:50:23.690 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 10:50:23.691 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 10:50:23.691 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 10:50:23.691 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 10:50:23.700 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 10:52:42.086 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 10:52:42.201 +01:00  DBG  Hosting starting
+2023-11-13 10:52:42.267 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 10:52:42.267 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 10:52:42.267 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 10:52:42.267 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 10:52:42.273 +01:00  INF  Hosting environment: Development
+2023-11-13 10:52:42.273 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 10:52:42.273 +01:00  DBG  Hosting started
+2023-11-13 10:52:42.307 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 10:52:42.331 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 10:52:42.395 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 10:52:42.395 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:52:42.483 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 10:52:42.614 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 10:52:42.621 +01:00  DBG  Connection ID "18302628904424177675" disconnecting.
+2023-11-13 10:52:42.621 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 316.7697ms
+2023-11-13 10:52:42.622 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 10:52:42.623 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 10:52:42.628 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 5.3415ms
+2023-11-13 10:52:42.643 +01:00  DBG  Connection ID "18158513712053354501" disconnecting.
+2023-11-13 10:52:42.647 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.5047ms
+2023-11-13 10:52:42.722 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 10:52:42.724 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 10:52:42.724 +01:00  DBG  Request did not match any endpoints
+2023-11-13 10:52:42.851 +01:00  DBG  Connection ID "18230571323271151675" disconnecting.
+2023-11-13 10:52:42.851 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.2991ms
+2023-11-13 11:07:14.941 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 11:07:15.018 +01:00  DBG  Hosting starting
+2023-11-13 11:07:15.105 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 11:07:15.106 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 11:07:15.106 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 11:07:15.112 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 11:07:15.113 +01:00  INF  Hosting environment: Development
+2023-11-13 11:07:15.113 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 11:07:15.113 +01:00  DBG  Hosting started
+2023-11-13 11:07:15.144 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 11:07:15.168 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 11:07:15.227 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 11:07:15.227 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:07:15.344 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 11:07:15.477 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 11:07:15.488 +01:00  DBG  Connection ID "18230571293206380570" disconnecting.
+2023-11-13 11:07:15.488 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 11:07:15.488 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 11:07:15.489 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 346.2805ms
+2023-11-13 11:07:15.494 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 5.2025ms
+2023-11-13 11:07:15.495 +01:00  DBG  Connection ID "18086456113720459291" disconnecting.
+2023-11-13 11:07:15.508 +01:00  DBG  Connection ID "18230571301796315192" disconnecting.
+2023-11-13 11:07:15.513 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.3843ms
+2023-11-13 11:07:15.582 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 11:07:15.584 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 11:07:15.584 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:07:15.713 +01:00  DBG  Connection ID "18230571310386249777" disconnecting.
+2023-11-13 11:07:15.713 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.6820ms
+2023-11-13 11:08:03.125 +01:00  INF  Request starting HTTP/2 POST https://localhost:44375/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundarywuEfjbLFHLQc7RWy 780
+2023-11-13 11:08:03.168 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 11:08:03.174 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 11:08:03.175 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 11:08:03.179 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 11:08:03.183 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 11:08:03.213 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 11:08:03.218 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 11:08:03.218 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 11:08:03.218 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 11:08:03.218 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 11:08:03.218 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 11:08:03.221 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 11:08:03.225 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 11:08:03.246 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 11:08:03.250 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 11:08:03.254 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 11:08:03.255 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 11:08:03.257 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 11:08:03.257 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 11:08:03.257 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 11:08:03.257 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 11:08:03.257 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 11:08:03.257 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 11:08:03.257 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 11:08:03.257 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 11:08:03.258 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 11:08:03.258 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 11:08:03.258 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 11:08:03.259 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 11:08:03.259 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 11:08:03.259 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 11:08:03.259 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 11:08:03.260 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 11:08:03.260 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 11:08:03.271 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 11:20:28.268 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 11:20:28.393 +01:00  DBG  Hosting starting
+2023-11-13 11:20:28.768 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 11:20:28.768 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 11:20:28.768 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 11:20:28.768 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 11:20:28.768 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 11:20:28.769 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 11:20:28.769 +01:00  INF  Hosting environment: Development
+2023-11-13 11:20:28.769 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 11:20:28.770 +01:00  DBG  Hosting started
+2023-11-13 11:20:28.790 +01:00  DBG  Connection id "0HMV468KDJ1CN" received FIN.
+2023-11-13 11:20:28.790 +01:00  DBG  Connection id "0HMV468KDJ1CM" received FIN.
+2023-11-13 11:20:28.795 +01:00  DBG  Connection id "0HMV468KDJ1CN" accepted.
+2023-11-13 11:20:28.795 +01:00  DBG  Connection id "0HMV468KDJ1CM" accepted.
+2023-11-13 11:20:28.796 +01:00  DBG  Connection id "0HMV468KDJ1CM" started.
+2023-11-13 11:20:28.796 +01:00  DBG  Connection id "0HMV468KDJ1CN" started.
+2023-11-13 11:20:28.817 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 11:20:28.817 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 11:20:28.839 +01:00  DBG  Connection id "0HMV468KDJ1CN" stopped.
+2023-11-13 11:20:28.839 +01:00  DBG  Connection id "0HMV468KDJ1CM" stopped.
+2023-11-13 11:20:28.845 +01:00  DBG  Connection id "0HMV468KDJ1CN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:20:28.845 +01:00  DBG  Connection id "0HMV468KDJ1CM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:20:28.954 +01:00  DBG  Connection id "0HMV468KDJ1CO" accepted.
+2023-11-13 11:20:28.954 +01:00  DBG  Connection id "0HMV468KDJ1CO" started.
+2023-11-13 11:20:29.028 +01:00  DBG  Connection 0HMV468KDJ1CO established using the following protocol: "Tls12"
+2023-11-13 11:20:29.110 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 11:20:29.142 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 11:20:29.228 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 11:20:29.229 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:20:29.321 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 11:20:29.413 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 11:20:29.416 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 309.6371ms
+2023-11-13 11:20:29.437 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 11:20:29.437 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 11:20:29.452 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 14.2097ms
+2023-11-13 11:20:29.464 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.4061ms
+2023-11-13 11:20:29.535 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 11:20:29.536 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 11:20:29.536 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:20:29.665 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 130.6698ms
+2023-11-13 11:20:30.556 +01:00  DBG  Connection id "0HMV468KDJ1CO" received FIN.
+2023-11-13 11:20:30.559 +01:00  DBG  The connection queue processing loop for 0HMV468KDJ1CO completed.
+2023-11-13 11:20:30.562 +01:00  DBG  Connection id "0HMV468KDJ1CO" is closed. The last processed stream ID was 7.
+2023-11-13 11:20:30.563 +01:00  DBG  Connection id "0HMV468KDJ1CO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:20:30.569 +01:00  DBG  Connection id "0HMV468KDJ1CO" stopped.
+2023-11-13 11:20:35.456 +01:00  DBG  Connection id "0HMV468KDJ1CP" accepted.
+2023-11-13 11:20:35.456 +01:00  DBG  Connection id "0HMV468KDJ1CP" started.
+2023-11-13 11:20:35.468 +01:00  DBG  Connection 0HMV468KDJ1CP established using the following protocol: "Tls12"
+2023-11-13 11:20:35.473 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/book - -
+2023-11-13 11:20:35.477 +01:00  DBG  1 candidate(s) found for the request path '/book'
+2023-11-13 11:20:35.478 +01:00  DBG  Request matched endpoint 'HTTP: GET /book'
+2023-11-13 11:20:35.482 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 11:20:35.485 +01:00  INF  Executing endpoint 'HTTP: GET /book'
+2023-11-13 11:20:35.491 +01:00  INF  Executed endpoint 'HTTP: GET /book'
+2023-11-13 11:20:35.491 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/book - - - 200 - application/json;+charset=utf-8 18.2703ms
+2023-11-13 11:20:40.576 +01:00  DBG  Connection id "0HMV468KDJ1CP" received FIN.
+2023-11-13 11:20:40.577 +01:00  DBG  Connection id "0HMV468KDJ1CP" is closed. The last processed stream ID was 1.
+2023-11-13 11:20:40.577 +01:00  DBG  Connection id "0HMV468KDJ1CP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:20:40.577 +01:00  DBG  The connection queue processing loop for 0HMV468KDJ1CP completed.
+2023-11-13 11:20:40.577 +01:00  DBG  Connection id "0HMV468KDJ1CP" stopped.
+2023-11-13 11:21:11.245 +01:00  DBG  Connection id "0HMV468KDJ1CQ" accepted.
+2023-11-13 11:21:11.246 +01:00  DBG  Connection id "0HMV468KDJ1CQ" started.
+2023-11-13 11:21:11.257 +01:00  DBG  Connection 0HMV468KDJ1CQ established using the following protocol: "Tls12"
+2023-11-13 11:21:11.262 +01:00  INF  Request starting HTTP/2 POST https://localhost:7117/book application/json 56
+2023-11-13 11:21:11.268 +01:00  DBG  1 candidate(s) found for the request path '/book'
+2023-11-13 11:21:11.268 +01:00  DBG  Request matched endpoint 'HTTP: POST /book'
+2023-11-13 11:21:11.269 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 11:21:11.269 +01:00  INF  Executing endpoint 'HTTP: POST /book'
+2023-11-13 11:21:11.274 +01:00  DBG  Connection id "0HMV468KDJ1CQ", Request id "0HMV468KDJ1CQ:00000001": started reading request body.
+2023-11-13 11:21:11.274 +01:00  DBG  Connection id "0HMV468KDJ1CQ", Request id "0HMV468KDJ1CQ:00000001": done reading request body.
+2023-11-13 11:21:11.278 +01:00  INF  Executed endpoint 'HTTP: POST /book'
+2023-11-13 11:21:11.278 +01:00  INF  Request finished HTTP/2 POST https://localhost:7117/book application/json 56 - 200 - application/json;+charset=utf-8 15.5958ms
+2023-11-13 11:21:15.361 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 11:21:15.362 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 11:21:15.362 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:21:15.363 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 11:21:15.399 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 11:21:15.400 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 38.7869ms
+2023-11-13 11:21:15.400 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 11:21:15.402 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 11:21:15.412 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 7.7404ms
+2023-11-13 11:21:15.432 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.9083ms
+2023-11-13 11:21:15.496 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 11:21:15.496 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 11:21:15.496 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:21:15.505 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.9373ms
+2023-11-13 11:21:18.382 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/book - -
+2023-11-13 11:21:18.383 +01:00  DBG  1 candidate(s) found for the request path '/book'
+2023-11-13 11:21:18.383 +01:00  DBG  Request matched endpoint 'HTTP: GET /book'
+2023-11-13 11:21:18.383 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 11:21:18.383 +01:00  INF  Executing endpoint 'HTTP: GET /book'
+2023-11-13 11:21:18.383 +01:00  INF  Executed endpoint 'HTTP: GET /book'
+2023-11-13 11:21:18.383 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/book - - - 200 - application/json;+charset=utf-8 0.5623ms
+2023-11-13 11:21:24.991 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/book - -
+2023-11-13 11:21:24.991 +01:00  DBG  1 candidate(s) found for the request path '/book'
+2023-11-13 11:21:24.991 +01:00  DBG  Request matched endpoint 'HTTP: GET /book'
+2023-11-13 11:21:24.991 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 11:21:24.991 +01:00  INF  Executing endpoint 'HTTP: GET /book'
+2023-11-13 11:21:24.991 +01:00  INF  Executed endpoint 'HTTP: GET /book'
+2023-11-13 11:21:24.991 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/book - - - 200 - application/json;+charset=utf-8 0.4732ms
+2023-11-13 11:21:39.195 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 11:21:39.343 +01:00  DBG  Hosting starting
+2023-11-13 11:21:39.672 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 11:21:39.673 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 11:21:39.673 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 11:21:39.673 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 11:21:39.673 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 11:21:39.673 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 11:21:39.673 +01:00  INF  Hosting environment: Development
+2023-11-13 11:21:39.673 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 11:21:39.673 +01:00  DBG  Hosting started
+2023-11-13 11:21:39.809 +01:00  DBG  Connection id "0HMV4699ISG6A" accepted.
+2023-11-13 11:21:39.809 +01:00  DBG  Connection id "0HMV4699ISG69" accepted.
+2023-11-13 11:21:39.811 +01:00  DBG  Connection id "0HMV4699ISG69" started.
+2023-11-13 11:21:39.811 +01:00  DBG  Connection id "0HMV4699ISG6A" started.
+2023-11-13 11:21:39.833 +01:00  DBG  Connection id "0HMV4699ISG69" received FIN.
+2023-11-13 11:21:39.833 +01:00  DBG  Connection id "0HMV4699ISG6A" received FIN.
+2023-11-13 11:21:39.845 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 11:21:39.845 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 11:21:39.859 +01:00  DBG  Connection id "0HMV4699ISG69" stopped.
+2023-11-13 11:21:39.859 +01:00  DBG  Connection id "0HMV4699ISG6A" stopped.
+2023-11-13 11:21:39.863 +01:00  DBG  Connection id "0HMV4699ISG6A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:21:39.863 +01:00  DBG  Connection id "0HMV4699ISG69" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:21:40.188 +01:00  DBG  Connection id "0HMV4699ISG6B" accepted.
+2023-11-13 11:21:40.189 +01:00  DBG  Connection id "0HMV4699ISG6B" started.
+2023-11-13 11:21:40.245 +01:00  DBG  Connection 0HMV4699ISG6B established using the following protocol: "Tls12"
+2023-11-13 11:21:40.313 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 11:21:40.335 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 11:21:40.402 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 11:21:40.403 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:21:40.510 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 11:21:40.613 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 11:21:40.615 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 303.6194ms
+2023-11-13 11:21:40.621 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 11:21:40.621 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 11:21:40.632 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 10.5108ms
+2023-11-13 11:21:40.646 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6641ms
+2023-11-13 11:21:40.709 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 11:21:40.711 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 11:21:40.711 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:21:40.834 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.8770ms
+2023-11-13 11:21:48.347 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/book - -
+2023-11-13 11:21:48.351 +01:00  DBG  1 candidate(s) found for the request path '/book'
+2023-11-13 11:21:48.351 +01:00  DBG  Request matched endpoint 'HTTP: GET /book'
+2023-11-13 11:21:48.354 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 11:21:48.359 +01:00  INF  Executing endpoint 'HTTP: GET /book'
+2023-11-13 11:21:48.364 +01:00  INF  Executed endpoint 'HTTP: GET /book'
+2023-11-13 11:21:48.364 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/book - - - 200 - application/json;+charset=utf-8 17.5659ms
+2023-11-13 11:21:55.678 +01:00  DBG  Connection id "0HMV4699ISG6B" received FIN.
+2023-11-13 11:21:55.681 +01:00  DBG  The connection queue processing loop for 0HMV4699ISG6B completed.
+2023-11-13 11:21:55.690 +01:00  DBG  Connection id "0HMV4699ISG6B" is closed. The last processed stream ID was 9.
+2023-11-13 11:21:55.691 +01:00  DBG  Connection id "0HMV4699ISG6B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:21:55.706 +01:00  DBG  Connection id "0HMV4699ISG6B" stopped.
+2023-11-13 11:44:20.689 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 11:44:20.819 +01:00  DBG  Hosting starting
+2023-11-13 11:44:21.048 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 11:44:21.048 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 11:44:21.048 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 11:44:21.048 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 11:44:21.048 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 11:44:21.049 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 11:44:21.053 +01:00  INF  Hosting environment: Development
+2023-11-13 11:44:21.054 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 11:44:21.055 +01:00  DBG  Hosting started
+2023-11-13 11:44:21.231 +01:00  DBG  Connection id "0HMV46LVABF4G" accepted.
+2023-11-13 11:44:21.231 +01:00  DBG  Connection id "0HMV46LVABF4H" accepted.
+2023-11-13 11:44:21.237 +01:00  DBG  Connection id "0HMV46LVABF4G" started.
+2023-11-13 11:44:21.237 +01:00  DBG  Connection id "0HMV46LVABF4H" started.
+2023-11-13 11:44:21.265 +01:00  DBG  Connection id "0HMV46LVABF4G" received FIN.
+2023-11-13 11:44:21.265 +01:00  DBG  Connection id "0HMV46LVABF4H" received FIN.
+2023-11-13 11:44:21.325 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 11:44:21.325 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 11:44:21.370 +01:00  DBG  Connection id "0HMV46LVABF4G" stopped.
+2023-11-13 11:44:21.370 +01:00  DBG  Connection id "0HMV46LVABF4H" stopped.
+2023-11-13 11:44:21.379 +01:00  DBG  Connection id "0HMV46LVABF4G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:44:21.379 +01:00  DBG  Connection id "0HMV46LVABF4H" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:44:21.509 +01:00  DBG  Connection id "0HMV46LVABF4I" accepted.
+2023-11-13 11:44:21.510 +01:00  DBG  Connection id "0HMV46LVABF4I" started.
+2023-11-13 11:44:21.574 +01:00  DBG  Connection 0HMV46LVABF4I established using the following protocol: "Tls12"
+2023-11-13 11:44:21.665 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 11:44:21.690 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 11:44:21.764 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 11:44:21.765 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:44:21.857 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 11:44:21.948 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 11:44:21.950 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 288.7184ms
+2023-11-13 11:44:21.962 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 11:44:21.962 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 11:44:21.978 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 16.0640ms
+2023-11-13 11:44:21.990 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.2116ms
+2023-11-13 11:44:22.061 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 11:44:22.063 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 11:44:22.063 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:44:22.194 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.7986ms
+2023-11-13 11:44:22.610 +01:00  DBG  Connection id "0HMV46LVABF4I" received FIN.
+2023-11-13 11:44:22.614 +01:00  DBG  The connection queue processing loop for 0HMV46LVABF4I completed.
+2023-11-13 11:44:22.621 +01:00  DBG  Connection id "0HMV46LVABF4I" is closed. The last processed stream ID was 7.
+2023-11-13 11:44:22.622 +01:00  DBG  Connection id "0HMV46LVABF4I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 11:44:22.633 +01:00  DBG  Connection id "0HMV46LVABF4I" stopped.
+2023-11-13 11:44:38.211 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 11:44:38.288 +01:00  DBG  Hosting starting
+2023-11-13 11:44:38.364 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 11:44:38.364 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 11:44:38.364 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 11:44:38.364 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 11:44:38.371 +01:00  INF  Hosting environment: Development
+2023-11-13 11:44:38.371 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 11:44:38.371 +01:00  DBG  Hosting started
+2023-11-13 11:44:38.405 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 11:44:38.434 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 11:44:38.496 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 11:44:38.496 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:44:38.584 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 11:44:38.719 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 11:44:38.729 +01:00  DBG  Connection ID "18230571310386249785" disconnecting.
+2023-11-13 11:44:38.729 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 11:44:38.729 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 11:44:38.730 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 323.3701ms
+2023-11-13 11:44:38.739 +01:00  DBG  Connection ID "18086456113720459309" disconnecting.
+2023-11-13 11:44:38.739 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 8.3953ms
+2023-11-13 11:44:38.757 +01:00  DBG  Connection ID "18302628891539275804" disconnecting.
+2023-11-13 11:44:38.759 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.5529ms
+2023-11-13 11:44:38.821 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 11:44:38.822 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 11:44:38.822 +01:00  DBG  Request did not match any endpoints
+2023-11-13 11:44:38.986 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 165.1090ms
+2023-11-13 11:44:41.015 +01:00  INF  Request starting HTTP/1.1 POST https://localhost:44375/api/Email/Send application/x-www-form-urlencoded 203
+2023-11-13 11:44:41.018 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 11:44:41.021 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 11:44:41.021 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 11:44:41.023 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 11:44:41.026 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 11:44:41.052 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 11:44:41.055 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 11:44:41.055 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 11:44:41.055 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 11:44:41.055 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 11:44:41.055 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 11:44:41.057 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 11:44:41.061 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 11:44:41.074 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 11:44:41.078 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 11:44:41.081 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 11:44:41.082 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 11:44:41.083 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 11:44:41.083 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 11:44:41.084 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 11:44:41.084 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 11:44:41.084 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 11:44:41.084 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 11:44:41.084 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 11:44:41.084 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 11:44:41.085 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 11:44:41.085 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 11:44:41.085 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 11:44:41.086 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 11:44:41.086 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 11:44:41.086 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 11:44:41.087 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 11:44:41.087 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 11:44:41.087 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 11:44:41.097 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 12:13:46.264 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 12:13:46.368 +01:00  DBG  Hosting starting
+2023-11-13 12:13:46.495 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 12:13:46.495 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 12:13:46.496 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 12:13:46.496 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 12:13:46.496 +01:00  INF  Hosting environment: Development
+2023-11-13 12:13:46.496 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 12:13:46.496 +01:00  DBG  Hosting started
+2023-11-13 12:13:46.553 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 12:13:46.588 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 12:13:46.670 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 12:13:46.670 +01:00  DBG  Request did not match any endpoints
+2023-11-13 12:13:46.769 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 12:13:46.911 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 12:13:46.917 +01:00  DBG  Connection ID "18302628908719144981" disconnecting.
+2023-11-13 12:13:46.917 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 366.0486ms
+2023-11-13 12:13:46.925 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 12:13:46.933 +01:00  DBG  Connection ID "18302628891539275808" disconnecting.
+2023-11-13 12:13:46.933 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 12:13:46.933 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 4.0572ms
+2023-11-13 12:13:46.955 +01:00  DBG  Connection ID "18374686481282236428" disconnecting.
+2023-11-13 12:13:46.955 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.4700ms
+2023-11-13 12:13:47.159 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 12:13:47.161 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 12:13:47.161 +01:00  DBG  Request did not match any endpoints
+2023-11-13 12:13:47.292 +01:00  DBG  Connection ID "18230571306091282449" disconnecting.
+2023-11-13 12:13:47.292 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.2767ms
+2023-11-13 13:02:24.424 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 13:02:24.505 +01:00  DBG  Hosting starting
+2023-11-13 13:02:24.580 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 13:02:24.580 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 13:02:24.580 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 13:02:24.581 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 13:02:24.586 +01:00  INF  Hosting environment: Development
+2023-11-13 13:02:24.586 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 13:02:24.586 +01:00  DBG  Hosting started
+2023-11-13 13:02:24.618 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 13:02:24.645 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 13:02:24.710 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 13:02:24.710 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:02:24.806 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 13:02:24.938 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 13:02:24.944 +01:00  DBG  Connection ID "18302628891539275810" disconnecting.
+2023-11-13 13:02:24.946 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 328.4274ms
+2023-11-13 13:02:24.952 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:02:24.956 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 13:02:24.965 +01:00  DBG  Connection ID "18374686507052040281" disconnecting.
+2023-11-13 13:02:24.965 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 11.9496ms
+2023-11-13 13:02:24.985 +01:00  DBG  Connection ID "18158513724938256404" disconnecting.
+2023-11-13 13:02:24.985 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.6001ms
+2023-11-13 13:02:25.193 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 13:02:25.194 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 13:02:25.194 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:02:25.325 +01:00  DBG  Connection ID "18158513724938256406" disconnecting.
+2023-11-13 13:02:25.325 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.6329ms
+2023-11-13 13:03:06.318 +01:00  INF  Request starting HTTP/2 POST https://localhost:44375/api/Email/Send multipart/form-data;+boundary=----WebKitFormBoundary1OojYUIzijguM4li 684
+2023-11-13 13:03:06.325 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 13:03:06.330 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 13:03:06.331 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 13:03:06.334 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 13:03:06.336 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 13:03:06.366 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 13:03:06.369 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 13:03:06.369 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 13:03:06.370 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 13:03:06.370 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 13:03:06.370 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 13:03:06.372 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 13:03:06.377 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 13:03:06.401 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 13:03:06.406 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 13:03:06.413 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 13:03:06.415 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 13:03:06.418 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 13:03:06.419 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 13:03:06.419 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 13:03:06.419 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 13:03:06.420 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 13:03:06.420 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 13:03:06.420 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 13:03:06.420 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 13:03:06.420 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 13:03:06.420 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 13:03:06.422 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 13:03:06.423 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 13:03:06.423 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 13:03:06.423 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 13:03:06.424 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 13:03:06.424 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 13:03:06.424 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 13:03:06.435 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 13:03:59.094 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 13:03:59.178 +01:00  DBG  Hosting starting
+2023-11-13 13:03:59.280 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 13:03:59.280 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 13:03:59.280 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 13:03:59.281 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 13:03:59.287 +01:00  INF  Hosting environment: Development
+2023-11-13 13:03:59.287 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 13:03:59.287 +01:00  DBG  Hosting started
+2023-11-13 13:03:59.372 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 13:03:59.399 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 13:03:59.463 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 13:03:59.464 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:03:59.548 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 13:03:59.669 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 13:03:59.675 +01:00  DBG  Connection ID "18302628917309079560" disconnecting.
+2023-11-13 13:03:59.676 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 305.6019ms
+2023-11-13 13:03:59.678 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:03:59.688 +01:00  DBG  Connection ID "18230571301796315201" disconnecting.
+2023-11-13 13:03:59.691 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 13:03:59.691 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 4.5979ms
+2023-11-13 13:03:59.714 +01:00  DBG  Connection ID "18086456122310393905" disconnecting.
+2023-11-13 13:03:59.716 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.2203ms
+2023-11-13 13:03:59.779 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 13:03:59.780 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 13:03:59.780 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:03:59.908 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 128.9060ms
+2023-11-13 13:04:25.756 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 13:04:25.869 +01:00  DBG  Hosting starting
+2023-11-13 13:04:26.148 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 13:04:26.148 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 13:04:26.148 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 13:04:26.148 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 13:04:26.148 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 13:04:26.149 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 13:04:26.149 +01:00  INF  Hosting environment: Development
+2023-11-13 13:04:26.149 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 13:04:26.149 +01:00  DBG  Hosting started
+2023-11-13 13:04:26.502 +01:00  DBG  Connection id "0HMV482ND1C94" received FIN.
+2023-11-13 13:04:26.502 +01:00  DBG  Connection id "0HMV482ND1C95" received FIN.
+2023-11-13 13:04:26.514 +01:00  DBG  Connection id "0HMV482ND1C95" accepted.
+2023-11-13 13:04:26.515 +01:00  DBG  Connection id "0HMV482ND1C94" accepted.
+2023-11-13 13:04:26.516 +01:00  DBG  Connection id "0HMV482ND1C95" started.
+2023-11-13 13:04:26.516 +01:00  DBG  Connection id "0HMV482ND1C94" started.
+2023-11-13 13:04:26.541 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 13:04:26.541 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 13:04:26.558 +01:00  DBG  Connection id "0HMV482ND1C95" stopped.
+2023-11-13 13:04:26.558 +01:00  DBG  Connection id "0HMV482ND1C94" stopped.
+2023-11-13 13:04:26.561 +01:00  DBG  Connection id "0HMV482ND1C94" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:04:26.561 +01:00  DBG  Connection id "0HMV482ND1C95" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:04:26.760 +01:00  DBG  Connection id "0HMV482ND1C96" accepted.
+2023-11-13 13:04:26.762 +01:00  DBG  Connection id "0HMV482ND1C96" started.
+2023-11-13 13:04:26.825 +01:00  DBG  Connection 0HMV482ND1C96 established using the following protocol: "Tls12"
+2023-11-13 13:04:26.913 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 13:04:26.945 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 13:04:27.044 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 13:04:27.045 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:04:27.138 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 13:04:27.248 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:04:27.250 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 13:04:27.253 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 13:04:27.261 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 346.6330ms
+2023-11-13 13:04:27.269 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 21.5443ms
+2023-11-13 13:04:27.279 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.9488ms
+2023-11-13 13:04:27.378 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 13:04:27.380 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 13:04:27.380 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:04:27.514 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.6192ms
+2023-11-13 13:04:34.823 +01:00  DBG  Connection id "0HMV482ND1C96" received FIN.
+2023-11-13 13:04:34.826 +01:00  DBG  The connection queue processing loop for 0HMV482ND1C96 completed.
+2023-11-13 13:04:34.832 +01:00  DBG  Connection id "0HMV482ND1C96" is closed. The last processed stream ID was 7.
+2023-11-13 13:04:34.832 +01:00  DBG  Connection id "0HMV482ND1C96" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:04:34.837 +01:00  DBG  Connection id "0HMV482ND1C96" stopped.
+2023-11-13 13:07:10.658 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 13:07:10.742 +01:00  DBG  Hosting starting
+2023-11-13 13:07:10.947 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 13:07:10.947 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 13:07:10.947 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 13:07:10.947 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 13:07:10.947 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 13:07:10.948 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 13:07:10.948 +01:00  INF  Hosting environment: Development
+2023-11-13 13:07:10.948 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 13:07:10.948 +01:00  DBG  Hosting started
+2023-11-13 13:07:10.990 +01:00  DBG  Connection id "0HMV4848DN8AN" received FIN.
+2023-11-13 13:07:10.990 +01:00  DBG  Connection id "0HMV4848DN8AO" received FIN.
+2023-11-13 13:07:10.997 +01:00  DBG  Connection id "0HMV4848DN8AO" accepted.
+2023-11-13 13:07:10.997 +01:00  DBG  Connection id "0HMV4848DN8AN" accepted.
+2023-11-13 13:07:10.998 +01:00  DBG  Connection id "0HMV4848DN8AO" started.
+2023-11-13 13:07:10.998 +01:00  DBG  Connection id "0HMV4848DN8AN" started.
+2023-11-13 13:07:11.051 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 13:07:11.051 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 13:07:11.085 +01:00  DBG  Connection id "0HMV4848DN8AO" stopped.
+2023-11-13 13:07:11.086 +01:00  DBG  Connection id "0HMV4848DN8AN" stopped.
+2023-11-13 13:07:11.095 +01:00  DBG  Connection id "0HMV4848DN8AO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:07:11.095 +01:00  DBG  Connection id "0HMV4848DN8AN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:07:11.201 +01:00  DBG  Connection id "0HMV4848DN8AP" accepted.
+2023-11-13 13:07:11.205 +01:00  DBG  Connection id "0HMV4848DN8AP" started.
+2023-11-13 13:07:11.302 +01:00  DBG  Connection 0HMV4848DN8AP established using the following protocol: "Tls12"
+2023-11-13 13:07:11.391 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 13:07:11.431 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 13:07:11.529 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 13:07:11.529 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:07:11.678 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 13:07:11.778 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 13:07:11.781 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 396.3492ms
+2023-11-13 13:07:11.790 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:07:11.791 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 13:07:11.803 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 13.0646ms
+2023-11-13 13:07:11.812 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.2118ms
+2023-11-13 13:07:11.901 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 13:07:11.903 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 13:07:11.903 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:07:12.081 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 179.5804ms
+2023-11-13 13:07:15.014 +01:00  DBG  Connection id "0HMV4848DN8AP" received FIN.
+2023-11-13 13:07:15.020 +01:00  DBG  The connection queue processing loop for 0HMV4848DN8AP completed.
+2023-11-13 13:07:15.023 +01:00  DBG  Connection id "0HMV4848DN8AP" is closed. The last processed stream ID was 7.
+2023-11-13 13:07:15.023 +01:00  DBG  Connection id "0HMV4848DN8AP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:07:15.035 +01:00  DBG  Connection id "0HMV4848DN8AP" stopped.
+2023-11-13 13:31:38.615 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 13:31:38.885 +01:00  DBG  Hosting starting
+2023-11-13 13:31:39.091 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 13:31:39.091 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 13:31:39.091 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 13:31:39.091 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 13:31:39.091 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 13:31:39.092 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 13:31:39.092 +01:00  INF  Hosting environment: Development
+2023-11-13 13:31:39.093 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 13:31:39.093 +01:00  DBG  Hosting started
+2023-11-13 13:31:39.109 +01:00  DBG  Connection id "0HMV48HTUPKU8" accepted.
+2023-11-13 13:31:39.109 +01:00  DBG  Connection id "0HMV48HTUPKU7" accepted.
+2023-11-13 13:31:39.110 +01:00  DBG  Connection id "0HMV48HTUPKU8" started.
+2023-11-13 13:31:39.110 +01:00  DBG  Connection id "0HMV48HTUPKU7" started.
+2023-11-13 13:31:39.133 +01:00  DBG  Connection id "0HMV48HTUPKU8" received FIN.
+2023-11-13 13:31:39.133 +01:00  DBG  Connection id "0HMV48HTUPKU7" received FIN.
+2023-11-13 13:31:39.146 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 13:31:39.146 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 13:31:39.160 +01:00  DBG  Connection id "0HMV48HTUPKU7" stopped.
+2023-11-13 13:31:39.160 +01:00  DBG  Connection id "0HMV48HTUPKU8" stopped.
+2023-11-13 13:31:39.165 +01:00  DBG  Connection id "0HMV48HTUPKU7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:31:39.165 +01:00  DBG  Connection id "0HMV48HTUPKU8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:31:39.273 +01:00  DBG  Connection id "0HMV48HTUPKU9" accepted.
+2023-11-13 13:31:39.273 +01:00  DBG  Connection id "0HMV48HTUPKU9" started.
+2023-11-13 13:31:39.309 +01:00  DBG  Connection 0HMV48HTUPKU9 established using the following protocol: "Tls12"
+2023-11-13 13:31:39.398 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 13:31:39.430 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 13:31:39.526 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 13:31:39.527 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:31:39.629 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 13:31:39.718 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 13:31:39.720 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 326.3510ms
+2023-11-13 13:31:39.728 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:31:39.728 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 13:31:39.743 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 13.9535ms
+2023-11-13 13:31:39.754 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.5350ms
+2023-11-13 13:31:39.841 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 13:31:39.842 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 13:31:39.842 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:31:39.978 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.0122ms
+2023-11-13 13:31:42.107 +01:00  DBG  Connection id "0HMV48HTUPKU9" received FIN.
+2023-11-13 13:31:42.110 +01:00  DBG  The connection queue processing loop for 0HMV48HTUPKU9 completed.
+2023-11-13 13:31:42.113 +01:00  DBG  Connection id "0HMV48HTUPKU9" is closed. The last processed stream ID was 7.
+2023-11-13 13:31:42.113 +01:00  DBG  Connection id "0HMV48HTUPKU9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:31:42.120 +01:00  DBG  Connection id "0HMV48HTUPKU9" stopped.
+2023-11-13 13:42:22.655 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 13:42:22.723 +01:00  DBG  Hosting starting
+2023-11-13 13:42:22.870 +01:00  INF  Now listening on: https://localhost:7117
+2023-11-13 13:42:22.871 +01:00  INF  Now listening on: http://localhost:5066
+2023-11-13 13:42:22.871 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 13:42:22.871 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 13:42:22.871 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 13:42:22.871 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 13:42:22.872 +01:00  INF  Hosting environment: Development
+2023-11-13 13:42:22.872 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 13:42:22.872 +01:00  DBG  Hosting started
+2023-11-13 13:42:23.032 +01:00  DBG  Connection id "0HMV48NTRNKJQ" accepted.
+2023-11-13 13:42:23.032 +01:00  DBG  Connection id "0HMV48NTRNKJR" accepted.
+2023-11-13 13:42:23.034 +01:00  DBG  Connection id "0HMV48NTRNKJR" started.
+2023-11-13 13:42:23.034 +01:00  DBG  Connection id "0HMV48NTRNKJQ" started.
+2023-11-13 13:42:23.083 +01:00  DBG  Connection id "0HMV48NTRNKJQ" received FIN.
+2023-11-13 13:42:23.083 +01:00  DBG  Connection id "0HMV48NTRNKJR" received FIN.
+2023-11-13 13:42:23.097 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 13:42:23.097 +01:00  DBG  Failed to authenticate HTTPS connection.System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+
+2023-11-13 13:42:23.114 +01:00  DBG  Connection id "0HMV48NTRNKJQ" stopped.
+2023-11-13 13:42:23.114 +01:00  DBG  Connection id "0HMV48NTRNKJR" stopped.
+2023-11-13 13:42:23.119 +01:00  DBG  Connection id "0HMV48NTRNKJR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:42:23.119 +01:00  DBG  Connection id "0HMV48NTRNKJQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:42:23.303 +01:00  DBG  Connection id "0HMV48NTRNKJS" accepted.
+2023-11-13 13:42:23.303 +01:00  DBG  Connection id "0HMV48NTRNKJS" started.
+2023-11-13 13:42:23.377 +01:00  DBG  Connection 0HMV48NTRNKJS established using the following protocol: "Tls12"
+2023-11-13 13:42:23.469 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2023-11-13 13:42:23.536 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 13:42:23.671 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 13:42:23.672 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:42:23.860 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 13:42:23.984 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 13:42:23.990 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 522.3661ms
+2023-11-13 13:42:24.005 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:42:24.012 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2023-11-13 13:42:24.030 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 24.5037ms
+2023-11-13 13:42:24.059 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.4498ms
+2023-11-13 13:42:24.134 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2023-11-13 13:42:24.135 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 13:42:24.135 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:42:24.345 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 210.7697ms
+2023-11-13 13:42:33.160 +01:00  DBG  Connection id "0HMV48NTRNKJS" received FIN.
+2023-11-13 13:42:33.166 +01:00  DBG  The connection queue processing loop for 0HMV48NTRNKJS completed.
+2023-11-13 13:42:33.171 +01:00  DBG  Connection id "0HMV48NTRNKJS" is closed. The last processed stream ID was 7.
+2023-11-13 13:42:33.171 +01:00  DBG  Connection id "0HMV48NTRNKJS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-11-13 13:42:41.919 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 13:42:42.004 +01:00  DBG  Hosting starting
+2023-11-13 13:42:42.083 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 13:42:42.083 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 13:42:42.083 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 13:42:42.084 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 13:42:42.090 +01:00  INF  Hosting environment: Development
+2023-11-13 13:42:42.090 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 13:42:42.090 +01:00  DBG  Hosting started
+2023-11-13 13:42:42.123 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 13:42:42.146 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 13:42:42.213 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 13:42:42.214 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:42:42.305 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 13:42:42.439 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 13:42:42.442 +01:00  DBG  Connection ID "18374686481282236438" disconnecting.
+2023-11-13 13:42:42.443 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 321.3973ms
+2023-11-13 13:42:42.455 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 13:42:42.455 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 13:42:42.472 +01:00  DBG  Connection ID "18014398515387564050" disconnecting.
+2023-11-13 13:42:42.474 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 8.0927ms
+2023-11-13 13:42:42.483 +01:00  DBG  Connection ID "18302628917309079574" disconnecting.
+2023-11-13 13:42:42.483 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.1942ms
+2023-11-13 13:42:42.545 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 13:42:42.546 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 13:42:42.547 +01:00  DBG  Request did not match any endpoints
+2023-11-13 13:42:42.676 +01:00  DBG  Connection ID "18374686481282236440" disconnecting.
+2023-11-13 13:42:42.676 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 131.0427ms
+2023-11-13 13:42:44.219 +01:00  INF  Request starting HTTP/1.1 POST https://localhost:44375/api/Email/Send application/x-www-form-urlencoded 203
+2023-11-13 13:42:44.223 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 13:42:44.226 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 13:42:44.226 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 13:42:44.228 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 13:42:44.231 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 13:42:44.251 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 13:42:44.253 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 13:42:44.254 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 13:42:44.254 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 13:42:44.254 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 13:42:44.255 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 13:42:44.257 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 13:42:44.260 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 13:42:44.280 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 13:42:44.284 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 13:42:44.289 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 13:42:44.290 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 13:42:44.292 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 13:42:44.292 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 13:42:44.292 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 13:42:44.292 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 13:42:44.292 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 13:42:44.292 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 13:42:44.292 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 13:42:44.292 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 13:42:44.293 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 13:42:44.293 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 13:42:44.293 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 13:42:44.294 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 13:42:44.294 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 13:42:44.294 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 13:42:44.294 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 13:42:44.295 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 13:42:44.295 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 13:42:44.303 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 14:14:48.660 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 14:14:48.764 +01:00  DBG  Hosting starting
+2023-11-13 14:14:48.857 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 14:14:48.857 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 14:14:48.857 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 14:14:48.865 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 14:14:48.865 +01:00  INF  Hosting environment: Development
+2023-11-13 14:14:48.865 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 14:14:48.865 +01:00  DBG  Hosting started
+2023-11-13 14:14:48.905 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 14:14:48.931 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 14:14:48.997 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 14:14:48.998 +01:00  DBG  Request did not match any endpoints
+2023-11-13 14:14:49.103 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 14:14:49.241 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 14:14:49.243 +01:00  DBG  Connection ID "18014398515387564052" disconnecting.
+2023-11-13 14:14:49.244 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 340.3046ms
+2023-11-13 14:14:49.255 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 14:14:49.255 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 14:14:49.266 +01:00  DBG  Connection ID "18158513729233223702" disconnecting.
+2023-11-13 14:14:49.269 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 10.2651ms
+2023-11-13 14:14:49.289 +01:00  DBG  Connection ID "18230571306091282459" disconnecting.
+2023-11-13 14:14:49.289 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6968ms
+2023-11-13 14:14:49.352 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 14:14:49.353 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 14:14:49.353 +01:00  DBG  Request did not match any endpoints
+2023-11-13 14:14:49.487 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.6456ms
+2023-11-13 14:14:52.603 +01:00  INF  Request starting HTTP/1.1 POST https://localhost:44375/api/Email/Send application/x-www-form-urlencoded 203
+2023-11-13 14:14:52.607 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 14:14:52.610 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 14:14:52.610 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 14:14:52.613 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 14:14:52.615 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 14:14:52.635 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 14:14:52.638 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 14:14:52.638 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 14:14:52.639 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 14:14:52.639 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 14:14:52.639 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 14:14:52.642 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 14:14:52.644 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 14:14:52.655 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 14:14:52.658 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 14:14:52.662 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 14:14:52.663 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 14:14:52.664 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 14:14:52.664 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 14:14:52.664 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 14:14:52.664 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 14:14:52.664 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 14:14:52.664 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 14:14:52.664 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 14:14:52.665 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 14:14:52.665 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 14:14:52.665 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 14:14:52.665 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 14:14:52.666 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 14:14:52.666 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 14:14:52.666 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 14:14:52.667 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 14:14:52.667 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 14:14:52.667 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 14:14:52.676 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 14:22:14.757 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 14:22:14.840 +01:00  DBG  Hosting starting
+2023-11-13 14:22:14.919 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 14:22:14.919 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 14:22:14.919 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 14:22:14.919 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 14:22:14.922 +01:00  INF  Hosting environment: Development
+2023-11-13 14:22:14.925 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 14:22:14.925 +01:00  DBG  Hosting started
+2023-11-13 14:22:14.957 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 14:22:14.985 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 14:22:15.044 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 14:22:15.045 +01:00  DBG  Request did not match any endpoints
+2023-11-13 14:22:15.130 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 14:22:15.282 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 14:22:15.291 +01:00  DBG  Connection ID "18302628917309079580" disconnecting.
+2023-11-13 14:22:15.298 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 14:22:15.298 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 14:22:15.298 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 336.2199ms
+2023-11-13 14:22:15.317 +01:00  DBG  Connection ID "18230571310386249794" disconnecting.
+2023-11-13 14:22:15.318 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 13.2637ms
+2023-11-13 14:22:15.326 +01:00  DBG  Connection ID "18374686481282236444" disconnecting.
+2023-11-13 14:22:15.327 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.0699ms
+2023-11-13 14:22:15.412 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 14:22:15.413 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 14:22:15.413 +01:00  DBG  Request did not match any endpoints
+2023-11-13 14:22:15.535 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.7575ms
+2023-11-13 14:35:34.408 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 14:35:34.555 +01:00  DBG  Hosting starting
+2023-11-13 14:35:34.786 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 14:35:34.786 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 14:35:34.786 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 14:35:34.787 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 14:35:34.787 +01:00  INF  Hosting environment: Development
+2023-11-13 14:35:34.787 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 14:35:34.787 +01:00  DBG  Hosting started
+2023-11-13 14:35:34.947 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 14:35:34.989 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 14:35:35.079 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 14:35:35.079 +01:00  DBG  Request did not match any endpoints
+2023-11-13 14:35:35.179 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 14:35:35.400 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 14:35:35.406 +01:00  DBG  Connection ID "18158513729233223711" disconnecting.
+2023-11-13 14:35:35.407 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 461.3135ms
+2023-11-13 14:35:35.408 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 14:35:35.408 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 14:35:35.418 +01:00  DBG  Connection ID "18230571306091282462" disconnecting.
+2023-11-13 14:35:35.418 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 9.6889ms
+2023-11-13 14:35:35.440 +01:00  DBG  Connection ID "18374686502757072936" disconnecting.
+2023-11-13 14:35:35.447 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.9518ms
+2023-11-13 14:35:35.511 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 14:35:35.512 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 14:35:35.512 +01:00  DBG  Request did not match any endpoints
+2023-11-13 14:35:35.638 +01:00  DBG  Connection ID "18158513729233223713" disconnecting.
+2023-11-13 14:35:35.638 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 127.5252ms
+2023-11-13 14:35:38.019 +01:00  INF  Request starting HTTP/1.1 POST https://localhost:44375/api/Email/Send application/x-www-form-urlencoded 203
+2023-11-13 14:35:38.024 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 14:35:38.026 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 14:35:38.027 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 14:35:38.030 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 14:35:38.033 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 14:35:38.062 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 14:35:38.065 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 14:35:38.065 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 14:35:38.066 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 14:35:38.066 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 14:35:38.066 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 14:35:38.067 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 14:35:38.069 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 14:35:38.083 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 14:35:38.086 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 14:35:38.089 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 14:35:38.090 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 14:35:38.091 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 14:35:38.091 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 14:35:38.091 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 14:35:38.092 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 14:35:38.092 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 14:35:38.092 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 14:35:38.092 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 14:35:38.092 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 14:35:38.092 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 14:35:38.092 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 14:35:38.093 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 14:35:38.093 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 14:35:38.093 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 14:35:38.093 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 14:35:38.094 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 14:35:38.094 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 14:35:38.094 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 14:35:38.104 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 15:41:18.453 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-13 15:41:18.528 +01:00  DBG  Hosting starting
+2023-11-13 15:41:18.623 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-13 15:41:18.624 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-13 15:41:18.624 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-13 15:41:18.624 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2023-11-13 15:41:18.632 +01:00  INF  Hosting environment: Development
+2023-11-13 15:41:18.632 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail
+2023-11-13 15:41:18.632 +01:00  DBG  Hosting started
+2023-11-13 15:41:18.669 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/index.html - -
+2023-11-13 15:41:18.693 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-13 15:41:18.758 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2023-11-13 15:41:18.759 +01:00  DBG  Request did not match any endpoints
+2023-11-13 15:41:18.867 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2023-11-13 15:41:19.018 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2023-11-13 15:41:19.024 +01:00  DBG  Connection ID "18374686481282236452" disconnecting.
+2023-11-13 15:41:19.030 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_vs/browserLink - -
+2023-11-13 15:41:19.030 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - -
+2023-11-13 15:41:19.030 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/index.html - - - 200 - text/html;charset=utf-8 357.3330ms
+2023-11-13 15:41:19.040 +01:00  DBG  Connection ID "18230571306091282466" disconnecting.
+2023-11-13 15:41:19.040 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 9.1324ms
+2023-11-13 15:41:19.056 +01:00  DBG  Connection ID "18158513707758387240" disconnecting.
+2023-11-13 15:41:19.059 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.8317ms
+2023-11-13 15:41:19.128 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - -
+2023-11-13 15:41:19.130 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-13 15:41:19.130 +01:00  DBG  Request did not match any endpoints
+2023-11-13 15:41:19.263 +01:00  DBG  Connection ID "18374686502757072938" disconnecting.
+2023-11-13 15:41:19.264 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.1770ms
+2023-11-13 15:41:25.125 +01:00  INF  Request starting HTTP/2 GET https://localhost:44375/hello - -
+2023-11-13 15:41:25.133 +01:00  DBG  1 candidate(s) found for the request path '/hello'
+2023-11-13 15:41:25.134 +01:00  DBG  Request matched endpoint 'HTTP: GET hello'
+2023-11-13 15:41:25.136 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 15:41:25.138 +01:00  INF  Executing endpoint 'HTTP: GET hello'
+2023-11-13 15:41:25.138 +01:00  INF  Executed endpoint 'HTTP: GET hello'
+2023-11-13 15:41:25.139 +01:00  INF  Request finished HTTP/2 GET https://localhost:44375/hello - - - 200 - text/plain;+charset=utf-8 13.9240ms
+2023-11-13 15:41:33.243 +01:00  INF  Request starting HTTP/1.1 POST https://localhost:44375/api/Email/Send application/x-www-form-urlencoded 203
+2023-11-13 15:41:33.243 +01:00  DBG  1 candidate(s) found for the request path '/api/Email/Send'
+2023-11-13 15:41:33.246 +01:00  DBG  Endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)' with route pattern 'api/Email/Send' is valid for the request path '/api/Email/Send'
+2023-11-13 15:41:33.246 +01:00  DBG  Request matched endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 15:41:33.247 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-13 15:41:33.247 +01:00  INF  Executing endpoint 'SendEmail.Controllers.EmailController.Send (SendEmail)'
+2023-11-13 15:41:33.269 +01:00  INF  Route matched with {action = "Send", controller = "Email"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Send(SendEmail.Models.MailRequest) on controller SendEmail.Controllers.EmailController (SendEmail).
+2023-11-13 15:41:33.272 +01:00  DBG  Execution plan of authorization filters (in the following order): ["None"]
+2023-11-13 15:41:33.273 +01:00  DBG  Execution plan of resource filters (in the following order): ["None"]
+2023-11-13 15:41:33.274 +01:00  DBG  Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-11-13 15:41:33.274 +01:00  DBG  Execution plan of exception filters (in the following order): ["None"]
+2023-11-13 15:41:33.274 +01:00  DBG  Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-11-13 15:41:33.276 +01:00  DBG  Executing controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 15:41:33.279 +01:00  DBG  Executed controller factory for controller SendEmail.Controllers.EmailController (SendEmail)
+2023-11-13 15:41:33.293 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 15:41:33.296 +01:00  DBG  Attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest' using the name '' in request data ...
+2023-11-13 15:41:33.299 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String' using the name 'ToEmail' in request data ...
+2023-11-13 15:41:33.299 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToEmail' of type 'System.String'.
+2023-11-13 15:41:33.301 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String' using the name 'ToDisplayName' in request data ...
+2023-11-13 15:41:33.301 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.ToDisplayName' of type 'System.String'.
+2023-11-13 15:41:33.301 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String' using the name 'FromDisplayName' in request data ...
+2023-11-13 15:41:33.301 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromDisplayName' of type 'System.String'.
+2023-11-13 15:41:33.302 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String' using the name 'FromMail' in request data ...
+2023-11-13 15:41:33.302 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.FromMail' of type 'System.String'.
+2023-11-13 15:41:33.302 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String' using the name 'Subject' in request data ...
+2023-11-13 15:41:33.302 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Subject' of type 'System.String'.
+2023-11-13 15:41:33.302 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String' using the name 'Body' in request data ...
+2023-11-13 15:41:33.302 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Body' of type 'System.String'.
+2023-11-13 15:41:33.303 +01:00  DBG  Attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection' using the name 'Attachments' in request data ...
+2023-11-13 15:41:33.303 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 15:41:33.303 +01:00  DBG  No files found in the request to bind the model to.
+2023-11-13 15:41:33.304 +01:00  DBG  Done attempting to bind property 'SendEmail.Models.MailRequest.Attachments' of type 'Microsoft.AspNetCore.Http.IFormFileCollection'.
+2023-11-13 15:41:33.304 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 15:41:33.304 +01:00  DBG  Done attempting to bind parameter 'request' of type 'SendEmail.Models.MailRequest'.
+2023-11-13 15:41:33.304 +01:00  DBG  Attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest' ...
+2023-11-13 15:41:33.313 +01:00  DBG  Done attempting to validate the bound parameter 'request' of type 'SendEmail.Models.MailRequest'.

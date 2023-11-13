@@ -13,14 +13,39 @@ namespace SendEmail.Services
 
     public class FakeMailSender : IMailService
     {
-        public MailRequest LastMailRequest { get; private set; }
+        public MailRequest LastMailRequest { get; set; }
+
+        //public string ToEmail { get; set; }
+
+        //public string ToDisplayName { get; set; }
+
+        //public string FromDisplayName { get; set; }
+
+        //public string FromMail { get; set; }
+
+        //public string Subject { get; set; }
+
+        //ublic string Body { get; set; }
+
+        //public IFormFileCollection? Attachments { get; set; }
 
         public Task SendEmailAsync(MailRequest mailrequest)
         {
-            // Save the last mail request for testing purposes
-            LastMailRequest = mailrequest;
+            //ToEmail = mailrequest.ToEmail;
 
-            // You can implement additional logic here if needed
+            //ToDisplayName = mailrequest.ToDisplayName;
+
+            //FromDisplayName = mailrequest.FromDisplayName;
+
+            //FromMail = mailrequest.FromMail;
+
+            //Subject = mailrequest.Subject;
+
+            //Body = mailrequest.Body;
+
+            //Attachments = mailrequest.Attachments;
+
+            LastMailRequest = mailrequest;
             return Task.CompletedTask;
         }
     }
@@ -37,11 +62,11 @@ namespace SendEmail.Services
         public Task SendEmailAsync(MailRequest mailrequest)
         {
             throw new NotImplementedException();
-            /*using var smtp = new MailKit.Net.Smtp.SmtpClient();
+            using var smtp = new MailKit.Net.Smtp.SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
-            await smtp.SendAsync(email);
-            smtp.Disconnect(true);*/
+            //await smtp.SendAsync(email);
+            smtp.Disconnect(true);
         }
     }
 }

@@ -55,7 +55,8 @@ namespace SendEmail
             var books = new List<Book>
             {
                 new Book { Id=1, Title="Pride and Prejudice", Author="Jane Austen"},
-                new Book { Id=2, Title="Macbeth", Author="William Shakespeare"},
+                new Book { Id=2, Title="Macbeth", Author="William Shakespear"},
+                new Book { Id=3, Title="Romeo and Juliet", Author="William Shakespear"},
             };
 
             app.MapGet("/book", () =>
@@ -98,10 +99,12 @@ namespace SendEmail
                 return Results.Ok(book);
             });
 
+            app.MapGet("hello", () => "Hello World!");
+
             app.Run();
 
         }
-        class Book
+        public class Book
         {
             public int Id { get; set; }
             public string Title { get; set; }

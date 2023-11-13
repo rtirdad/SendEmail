@@ -9,57 +9,48 @@ using SendEmail.Models;
 using SendEmail.Services;
 using System.Net.Http.Json;
 using SendEmail;
-
-
+using System.Net;
+//using NUnit.Framework.Constraints;
 
 namespace EmailTesting
 {
     public class Tests
     {
         private readonly FakeMailSender fakeMailSender = new();
-       
-
+        //private readonly IMailService fakeMailService = new();
+        //private Program Book;
         //private readonly LastMailRequest FakeMailSender = new ();
 
+
+
         [Test]
-        public async Task ToEmailShould()
+        public async Task FakeMailSender_Should_return_Content_in_MailRequest()
+        //public async Task SendEmailAsync_WhenValidMailRequestIsProvidedShouldSendEmail()
         {
-            //Assign
-
+            // Arrange
             var factory = new WebApplicationFactory<SendEmail.Program>().WithWebHostBuilder(builder => Setup(builder));
-
-
-            //Act
             var httpClient = factory.CreateClient();
-
             var mail = new MailRequest()
-
             {
-
                 ToEmail = "test@gmail.com",
-
                 ToDisplayName = "Test",
-
-                FromDisplayName = "Tester",
-
+                FromDisplayName = "Test",
                 FromMail = "test@gmail.com",
-
                 Subject = "Testing",
-
                 Body = "Hello",
+                //Attachments = new[] {}
+            };
 
-                //Attachments = []
-             
-        };
+            // Act
+            var response = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
 
-            //Assert
-            var respondse = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
-            //respondse.EnsureSuccessStatusCode();
-            //fakeMailSender.Model.Body.Should().Be("Hello!");
-            //fakeMailSender.LastMailRequest.Body.Should().Be("Hello");
-            respondse.Should().NotBeNull();
-            //respondse.Content.Should().Be("Hello");
+            // Assert
+           
+            //fakeMailSender.Subject.Should().Be("Testing");
+            fakeMailSender.LastMailRequest.Body.Should().Be("Hello");
+            //response.Should().NotBeNull();
         }
+
         public void Setup(IWebHostBuilder builder)
         {
             builder.ConfigureTestServices(services =>
@@ -68,26 +59,45 @@ namespace EmailTesting
                 services.AddSingleton<IMailService, FakeMailSender>();
 
             });
-
         }
 
         [Test]
-        public async Task GetBooks_ShouldReturnListOfBooks()
+        public async Task Return_Helloworld()
         {
-            // Arrange
-            var factory = new WebApplicationFactory<SendEmail.Program>().WithWebHostBuilder(builder => Setup(builder));
+            //Assign
+            var factory = new WebApplicationFactory<SendEmail.Program>();
+
+            //Act
             var httpClient = factory.CreateClient();
+            var respondse = await httpClient.GetStringAsync("hello");
 
-            // Act
-            var response = await httpClient.GetAsync("/book");
+            //Assert
+            respondse.Should().Be("Hello World!");
+        }
 
-            // Assert
-            response.Should().NotBeNull();
-            response.EnsureSuccessStatusCode(); // Ensure that the HTTP response indicates success (status code 2xx)
+        [Test]
+        public async Task Create_new_book()
+        {
+            //Assign
+            var factory = new WebApplicationFactory<SendEmail.Program>();
 
-            var books = await response.Content.ReadFromJsonAsync<List<Book>>();
-            books.Should().NotBeNull();
-            books.Should().HaveCountGreaterThan(0); // Assuming there are books in the list
+            //Act
+            var httpClient = factory.CreateClient();
+            var respondse = await httpClient.PostAsJsonAsync("/book", new Program.Book()
+            {
+                Id = 4,
+                Title = "The great Gatsby",
+                Author = "F. Scott fitzgerald"
+            });
+            
+            var content = await respondse.Content.ReadAsStringAsync();
+
+           //Assert
+           //Assert.IsTrue(respondse.StatusCode == HttpStatusCode.OK);
+           Assert.AreEqual(HttpStatusCode.OK, respondse.StatusCode);
+           content.Should().Contain("The great Gatsby");
+            content.Should().Contain("F. Scott fitzgerald");
+           respondse.Should().NotBeNull();
         }
     }
 }
