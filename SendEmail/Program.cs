@@ -28,7 +28,7 @@ namespace SendEmail
             builder.Services.AddControllers();
 
             // Correct the namespace if necessary
-            builder.Services.AddSingleton<IMailService, MailService>();
+            builder.Services.AddTransient<IMailService, MailService>();
             builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 
             builder.Services.AddEndpointsApiExplorer();

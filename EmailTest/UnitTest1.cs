@@ -47,7 +47,6 @@ namespace EmailTesting
             var response = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
 
             // Assert
-
             //fakeMailSender.Subject.Should().Be("Testing");
             fakeMailSender.FakeMailRequest.ToDisplayName.Should().Be("Test");
 
@@ -62,7 +61,7 @@ namespace EmailTesting
             builder.ConfigureTestServices(services =>
 
             {
-                services.AddSingleton<IMailService, FakeMailSender>();
+                services.AddTransient<IMailService, FakeMailSender>();
 
             });
         }
