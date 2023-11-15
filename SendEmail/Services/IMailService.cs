@@ -13,39 +13,47 @@ namespace SendEmail.Services
 
     public class FakeMailSender : IMailService
     {
-        public MailRequest LastMailRequest { get; set; }
 
-        //public string ToEmail { get; set; }
+        private readonly MailRequest _mailrequest;
 
-        //public string ToDisplayName { get; set; }
+        //public object? MailRequest { get; private set ; }
 
-        //public string FromDisplayName { get; set; }
+        /*public string ToEmail { get; set; }
 
-        //public string FromMail { get; set; }
+        public string ToDisplayName { get; set; }
 
-        //public string Subject { get; set; }
+        public string FromDisplayName { get; set; }
 
-        //ublic string Body { get; set; }
+        public string FromMail { get; set; }
 
-        //public IFormFileCollection? Attachments { get; set; }
+        public string Subject { get; set; }
+
+        public string Body { get; set; }
+
+        public IFormFileCollection? Attachments { get; set; }*/
+        public MailRequest FakeMailRequest { get; set; }
+
+        //public object MailRequest { get { return _mailrequest; } }
+
+        //public object FakeMailRequest { get; set; }
 
         public Task SendEmailAsync(MailRequest mailrequest)
         {
-            //ToEmail = mailrequest.ToEmail;
+            /*ToEmail = mailrequest.ToEmail;
 
-            //ToDisplayName = mailrequest.ToDisplayName;
+            ToDisplayName = mailrequest.ToDisplayName;
 
-            //FromDisplayName = mailrequest.FromDisplayName;
+            FromDisplayName = mailrequest.FromDisplayName;
 
-            //FromMail = mailrequest.FromMail;
+            FromMail = mailrequest.FromMail;
 
-            //Subject = mailrequest.Subject;
+            Subject = mailrequest.Subject;
 
-            //Body = mailrequest.Body;
+            Body = mailrequest.Body;
 
-            //Attachments = mailrequest.Attachments;
+            Attachments = mailrequest.Attachments;*/
 
-            LastMailRequest = mailrequest;
+            FakeMailRequest = mailrequest;
             return Task.CompletedTask;
         }
     }

@@ -47,7 +47,8 @@ namespace EmailTesting
             // Assert
            
             //fakeMailSender.Subject.Should().Be("Testing");
-            fakeMailSender.LastMailRequest.Body.Should().Be("Hello");
+            
+            fakeMailSender.FakeMailRequest.ToEmail.Should().Be("test@gmail.com");
             //response.Should().NotBeNull();
         }
 
