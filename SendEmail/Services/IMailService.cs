@@ -16,8 +16,6 @@ namespace SendEmail.Services
 
         private readonly MailRequest _mailrequest;
 
-        //public object? MailRequest { get; private set ; }
-
         /*public string ToEmail { get; set; }
 
         public string ToDisplayName { get; set; }
@@ -31,11 +29,15 @@ namespace SendEmail.Services
         public string Body { get; set; }
 
         public IFormFileCollection? Attachments { get; set; }*/
+
+
         public MailRequest FakeMailRequest { get; set; }
 
         //public object MailRequest { get { return _mailrequest; } }
 
         //public object FakeMailRequest { get; set; }
+
+
 
         public Task SendEmailAsync(MailRequest mailrequest)
         {
@@ -58,7 +60,7 @@ namespace SendEmail.Services
         }
     }
 
-    public class MailKitSender : IMailService
+    /*public class MailKitSender : IMailService
     {
         
         private readonly MailSettings _mailSettings;
@@ -76,5 +78,5 @@ namespace SendEmail.Services
             //await smtp.SendAsync(email);
             smtp.Disconnect(true);
         }
-    }
+    }*/
 }

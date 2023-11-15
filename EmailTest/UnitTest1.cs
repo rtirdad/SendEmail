@@ -10,6 +10,8 @@ using SendEmail.Services;
 using System.Net.Http.Json;
 using SendEmail;
 using System.Net;
+using Microsoft.AspNetCore.Hosting.StaticWebAssets;
+using MailKit.Net.Proxy;
 //using NUnit.Framework.Constraints;
 
 namespace EmailTesting
@@ -45,11 +47,14 @@ namespace EmailTesting
             var response = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
 
             // Assert
-           
+
             //fakeMailSender.Subject.Should().Be("Testing");
-            
-            fakeMailSender.FakeMailRequest.ToEmail.Should().Be("test@gmail.com");
+            fakeMailSender.FakeMailRequest.ToDisplayName.Should().Be("Test");
+
+            //fakeMailSender.FakeMailRequest.ToEmail.Should().Be("test@gmail.com");
             //response.Should().NotBeNull();
+
+
         }
 
         public void Setup(IWebHostBuilder builder)
@@ -74,6 +79,20 @@ namespace EmailTesting
 
             //Assert
             respondse.Should().Be("Hello World!");
+        }
+
+        [Test]
+        public async Task Return_All_Books()
+        {
+            //Assign
+            var factory = new WebApplicationFactory<SendEmail.Program>();
+
+            //Act
+            var httpClient = factory.CreateClient();
+            var respondse = await httpClient.GetStringAsync("/book");
+
+            //Assert
+            respondse.Should().Contain("Macbeth");
         }
 
         [Test]
