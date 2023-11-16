@@ -17,11 +17,10 @@ namespace SendEmail.Services
         private readonly MailSettings _mailSettings;
         private readonly IMailService _mailService;
         private readonly FakeMailSender _fakeMailSender;
-        
+
         public MailService(IOptions<MailSettings> options)
         {
             _mailSettings = options.Value;
-           
         }
 
         public async Task SendEmailAsync(MailRequest mailrequest)

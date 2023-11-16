@@ -3988,19 +3988,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CityGIS\\.nuget\\packages\\": {}
+    "C:\\Users\\31616\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\EmailTest\\EmailTest.csproj",
+      "projectUniqueName": "C:\\Users\\31616\\Desktop\\c#\\WebApplication3\\SendEmail\\EmailTest\\EmailTest.csproj",
       "projectName": "EmailTest",
-      "projectPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\EmailTest\\EmailTest.csproj",
-      "packagesPath": "C:\\Users\\CityGIS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\EmailTest\\obj\\",
+      "projectPath": "C:\\Users\\31616\\Desktop\\c#\\WebApplication3\\SendEmail\\EmailTest\\EmailTest.csproj",
+      "packagesPath": "C:\\Users\\31616\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\31616\\Desktop\\c#\\WebApplication3\\SendEmail\\EmailTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CityGIS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\31616\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4014,8 +4014,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\SendEmail.csproj": {
-              "projectPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\SendEmail.csproj"
+            "C:\\Users\\31616\\Desktop\\c#\\WebApplication3\\SendEmail\\SendEmail\\SendEmail.csproj": {
+              "projectPath": "C:\\Users\\31616\\Desktop\\c#\\WebApplication3\\SendEmail\\SendEmail\\SendEmail.csproj"
             }
           }
         }
@@ -4075,7 +4075,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,13 @@
+2023-11-16 12:57:43.132 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-16 12:57:43.294 +01:00  DBG  Hosting starting
+2023-11-16 12:57:43.546 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-16 12:57:43.546 +01:00  DBG  Hosting started
+2023-11-16 12:57:43.714 +01:00  INF  Request starting HTTP/1.1 POST http://localhost/book application/json;+charset=utf-8 66
+2023-11-16 12:57:43.727 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-16 12:57:43.853 +01:00  DBG  1 candidate(s) found for the request path '/book'
+2023-11-16 12:57:43.855 +01:00  DBG  Request matched endpoint 'HTTP: POST /book'
+2023-11-16 12:57:43.872 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-16 12:57:43.875 +01:00  WRN  Failed to determine the https port for redirect.
+2023-11-16 12:57:43.878 +01:00  INF  Executing endpoint 'HTTP: POST /book'
+2023-11-16 12:57:43.898 +01:00  INF  Executed endpoint 'HTTP: POST /book'
+2023-11-16 12:57:43.902 +01:00  INF  Request finished HTTP/1.1 POST http://localhost/book application/json;+charset=utf-8 66 - 200 - application/json;+charset=utf-8 189.8945ms

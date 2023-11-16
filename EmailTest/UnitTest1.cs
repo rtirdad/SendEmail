@@ -18,7 +18,7 @@ namespace EmailTesting
 {
     public class Tests
     {
-        private readonly FakeMailSender fakeMailSender = new();
+       // private readonly FakeMailSender fakeMailSender = new();
         //private readonly IMailService fakeMailService = new();
         //private Program Book;
         //private readonly LastMailRequest FakeMailSender = new ();
@@ -30,6 +30,7 @@ namespace EmailTesting
         //public async Task SendEmailAsync_WhenValidMailRequestIsProvidedShouldSendEmail()
         {
             // Arrange
+            var fakeMailSender = new FakeMailSender();
             var factory = new WebApplicationFactory<SendEmail.Program>().WithWebHostBuilder(builder => Setup(builder));
             var httpClient = factory.CreateClient();
             var mail = new MailRequest()
@@ -45,13 +46,16 @@ namespace EmailTesting
 
             // Act
             var response = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
+            await fakeMailSender.SendEmailAsync(mail);
+
 
             // Assert
             //fakeMailSender.Subject.Should().Be("Testing");
             fakeMailSender.FakeMailRequest.ToDisplayName.Should().Be("Test");
+            fakeMailSender.FakeMailRequest.Body.Should().Be("Hello");   
 
             //fakeMailSender.FakeMailRequest.ToEmail.Should().Be("test@gmail.com");
-            //response.Should().NotBeNull();
+            response.Should().NotBeNull();
 
 
         }
@@ -59,10 +63,9 @@ namespace EmailTesting
         public void Setup(IWebHostBuilder builder)
         {
             builder.ConfigureTestServices(services =>
-
             {
-                services.AddTransient<IMailService, FakeMailSender>();
-
+                services.AddTransient<FakeMailSender>();
+                //services.AddTransient<IMailService>(provider => provider.GetService<FakeMailSender>());
             });
         }
 

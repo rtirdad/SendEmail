@@ -30,8 +30,9 @@ namespace SendEmail.Services
 
         public IFormFileCollection? Attachments { get; set; }*/
 
+        public MailRequest FakeMailRequest { get; private set; }
 
-        public MailRequest FakeMailRequest { get; set; }
+        //public MailRequest FakeMailRequest { get; set; }
 
         //public object MailRequest { get { return _mailrequest; } }
 
