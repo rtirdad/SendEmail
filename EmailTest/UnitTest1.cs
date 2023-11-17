@@ -18,19 +18,12 @@ namespace EmailTesting
 {
     public class Tests
     {
-       // private readonly FakeMailSender fakeMailSender = new();
-        //private readonly IMailService fakeMailService = new();
-        //private Program Book;
-        //private readonly LastMailRequest FakeMailSender = new ();
-
-
+       private readonly FakeMailSender fakeMailSender = new();
 
         [Test]
         public async Task FakeMailSender_Should_return_Content_in_MailRequest()
-        //public async Task SendEmailAsync_WhenValidMailRequestIsProvidedShouldSendEmail()
         {
             // Arrange
-            var fakeMailSender = new FakeMailSender();
             var factory = new WebApplicationFactory<SendEmail.Program>().WithWebHostBuilder(builder => Setup(builder));
             var httpClient = factory.CreateClient();
             var mail = new MailRequest()
@@ -41,23 +34,24 @@ namespace EmailTesting
                 FromMail = "test@gmail.com",
                 Subject = "Testing",
                 Body = "Hello",
-                //Attachments = new[] {}
+                //Attachments = [];
             };
 
             // Act
-            var response = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
+            //var response = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
+            //var respondse = await httpClient.PostAsJsonAsync<FakeMailSender>("/send", mail);
             await fakeMailSender.SendEmailAsync(mail);
 
 
             // Assert
-            //fakeMailSender.Subject.Should().Be("Testing");
+            fakeMailSender.FakeMailRequest.Should().BeEquivalentTo(mail);
             fakeMailSender.FakeMailRequest.ToDisplayName.Should().Be("Test");
             fakeMailSender.FakeMailRequest.Body.Should().Be("Hello");   
+            fakeMailSender.FakeMailRequest.ToEmail.Should().Be("test@gmail.com");
+            fakeMailSender.FakeMailRequest.Attachments.Should().BeNull();
 
-            //fakeMailSender.FakeMailRequest.ToEmail.Should().Be("test@gmail.com");
-            response.Should().NotBeNull();
 
-
+            //response.Should().NotBeNull();
         }
 
         public void Setup(IWebHostBuilder builder)
@@ -65,7 +59,6 @@ namespace EmailTesting
             builder.ConfigureTestServices(services =>
             {
                 services.AddTransient<FakeMailSender>();
-                //services.AddTransient<IMailService>(provider => provider.GetService<FakeMailSender>());
             });
         }
 
@@ -115,7 +108,6 @@ namespace EmailTesting
             var content = await respondse.Content.ReadAsStringAsync();
 
            //Assert
-           //Assert.IsTrue(respondse.StatusCode == HttpStatusCode.OK);
            Assert.AreEqual(HttpStatusCode.OK, respondse.StatusCode);
            content.Should().Contain("The great Gatsby");
             content.Should().Contain("F. Scott fitzgerald");

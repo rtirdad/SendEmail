@@ -8,7 +8,6 @@ namespace SendEmail.Services
     public interface IMailService
     {
         Task SendEmailAsync(MailRequest mailrequest);
-
     }
 
     public class FakeMailSender : IMailService
@@ -32,14 +31,6 @@ namespace SendEmail.Services
 
         public MailRequest FakeMailRequest { get; private set; }
 
-        //public MailRequest FakeMailRequest { get; set; }
-
-        //public object MailRequest { get { return _mailrequest; } }
-
-        //public object FakeMailRequest { get; set; }
-
-
-
         public Task SendEmailAsync(MailRequest mailrequest)
         {
             /*ToEmail = mailrequest.ToEmail;
@@ -61,7 +52,9 @@ namespace SendEmail.Services
         }
     }
 
-    /*public class MailKitSender : IMailService
+
+
+    public class MailKitSender : IMailService
     {
         
         private readonly MailSettings _mailSettings;
@@ -70,7 +63,7 @@ namespace SendEmail.Services
         {
             _mailSettings = mailSettings;
         }
-        public Task SendEmailAsync(MailRequest mailrequest)
+        public async Task SendEmailAsync(MailRequest mailrequest)
         {
             throw new NotImplementedException();
             using var smtp = new MailKit.Net.Smtp.SmtpClient();
@@ -79,5 +72,5 @@ namespace SendEmail.Services
             //await smtp.SendAsync(email);
             smtp.Disconnect(true);
         }
-    }*/
+    }
 }

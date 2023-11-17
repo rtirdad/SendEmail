@@ -1877,19 +1877,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\31616\\.nuget\\packages\\": {}
+    "C:\\Users\\CityGIS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\31616\\Desktop\\c#\\WebApplication3\\SendEmail\\SendEmail\\SendEmail.csproj",
+      "projectUniqueName": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\SendEmail.csproj",
       "projectName": "SendEmail",
-      "projectPath": "C:\\Users\\31616\\Desktop\\c#\\WebApplication3\\SendEmail\\SendEmail\\SendEmail.csproj",
-      "packagesPath": "C:\\Users\\31616\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\31616\\Desktop\\c#\\WebApplication3\\SendEmail\\SendEmail\\obj\\",
+      "projectPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\SendEmail.csproj",
+      "packagesPath": "C:\\Users\\CityGIS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CityGIS\\Desktop\\C#\\SendEmail\\SendEmail\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\31616\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CityGIS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1951,7 +1951,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -52,10 +52,8 @@ namespace SendEmail.Services
             email.Body = builder.ToMessageBody();
 
             //await _mailService.SendEmailAsync(mailrequest);
-
             await _fakeMailSender.SendEmailAsync(mailrequest);
         
-
             /*using var smtp = new MailKit.Net.Smtp.SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);

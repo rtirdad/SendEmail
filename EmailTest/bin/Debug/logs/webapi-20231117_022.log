@@ -1,0 +1,26 @@
+2023-11-17 11:46:31.166 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-17 11:46:31.172 +01:00  DBG  Hosting starting
+2023-11-17 11:46:31.173 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-17 11:46:31.173 +01:00  DBG  Hosting started
+2023-11-17 11:46:31.174 +01:00  INF  Request starting HTTP/1.1 GET http://localhost/hello - -
+2023-11-17 11:46:31.174 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-17 11:46:31.180 +01:00  DBG  1 candidate(s) found for the request path '/hello'
+2023-11-17 11:46:31.180 +01:00  DBG  Request matched endpoint 'HTTP: GET hello'
+2023-11-17 11:46:31.181 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-17 11:46:31.181 +01:00  WRN  Failed to determine the https port for redirect.
+2023-11-17 11:46:31.181 +01:00  INF  Executing endpoint 'HTTP: GET hello'
+2023-11-17 11:46:31.182 +01:00  INF  Executed endpoint 'HTTP: GET hello'
+2023-11-17 11:46:31.182 +01:00  INF  Request finished HTTP/1.1 GET http://localhost/hello - - - 200 - text/plain;+charset=utf-8 8.2538ms
+2023-11-17 11:47:10.000 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-11-17 11:47:10.050 +01:00  DBG  Hosting starting
+2023-11-17 11:47:10.065 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2023-11-17 11:47:10.066 +01:00  DBG  Hosting started
+2023-11-17 11:47:10.103 +01:00  INF  Request starting HTTP/1.1 POST http://localhost/book application/json;+charset=utf-8 66
+2023-11-17 11:47:10.108 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2023-11-17 11:47:10.153 +01:00  DBG  1 candidate(s) found for the request path '/book'
+2023-11-17 11:47:10.153 +01:00  DBG  Request matched endpoint 'HTTP: POST /book'
+2023-11-17 11:47:10.162 +01:00  DBG  Static files was skipped as the request already matched an endpoint.
+2023-11-17 11:47:10.163 +01:00  WRN  Failed to determine the https port for redirect.
+2023-11-17 11:47:10.164 +01:00  INF  Executing endpoint 'HTTP: POST /book'
+2023-11-17 11:47:10.176 +01:00  INF  Executed endpoint 'HTTP: POST /book'
+2023-11-17 11:47:10.178 +01:00  INF  Request finished HTTP/1.1 POST http://localhost/book application/json;+charset=utf-8 66 - 200 - application/json;+charset=utf-8 77.5408ms
