@@ -2,7 +2,13 @@
 using SendEmail.Models;
 using SendEmail.Settings;
 using System.Threading.Tasks;
-
+using MailKit.Net.Smtp;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Options;
+using MimeKit;
+using MailKit;
+using System.Net.Mail;
+using MimeKit.Text;
 namespace SendEmail.Services
 {
     public interface IMailService
@@ -29,7 +35,7 @@ namespace SendEmail.Services
 
         public IFormFileCollection? Attachments { get; set; }*/
 
-        public MailRequest FakeMailRequest { get; private set; }
+        public MailRequest MailRequest { get; set; }
 
         public Task SendEmailAsync(MailRequest mailrequest)
         {
@@ -47,13 +53,10 @@ namespace SendEmail.Services
 
             Attachments = mailrequest.Attachments;*/
 
-            FakeMailRequest = mailrequest;
+            MailRequest = mailrequest;
             return Task.CompletedTask;
         }
     }
-
-
-
     public class MailKitSender : IMailService
     {
         

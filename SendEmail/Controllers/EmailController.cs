@@ -13,6 +13,7 @@ namespace SendEmail.Controllers
     public class EmailController : ControllerBase
     {
         private readonly IMailService _mailService;
+        private readonly FakeMailSender _fakeSender;
         private readonly ILogger<EmailController> _logger;
 
         public EmailController(IMailService mailService, ILogger<EmailController> logger)
@@ -26,7 +27,8 @@ namespace SendEmail.Controllers
         {
             try
             {
-                await _mailService.SendEmailAsync(request);
+                //await _mailService.SendEmailAsync(request);
+                await _fakeSender.SendEmailAsync(request);
                 _logger.LogInformation("Email sent successfully :)");
                 return Ok();
 

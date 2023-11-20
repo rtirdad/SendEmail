@@ -12,7 +12,8 @@ using SendEmail;
 using System.Net;
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using MailKit.Net.Proxy;
-//using NUnit.Framework.Constraints;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace EmailTesting
 {
@@ -26,7 +27,8 @@ namespace EmailTesting
             // Arrange
             var factory = new WebApplicationFactory<SendEmail.Program>().WithWebHostBuilder(builder => Setup(builder));
             var httpClient = factory.CreateClient();
-            var mail = new MailRequest()
+
+            var mailInfo = new MailRequest()
             {
                 ToEmail = "test@gmail.com",
                 ToDisplayName = "Test",
@@ -34,29 +36,28 @@ namespace EmailTesting
                 FromMail = "test@gmail.com",
                 Subject = "Testing",
                 Body = "Hello",
-                //Attachments = [];
+                Attachments = { }
             };
 
             // Act
-            var response = await httpClient.PostAsJsonAsync<MailRequest>("/send", mail);
-            //var response = await httpClient.PostAsJsonAsync<FakeMailSender>("/send", mail);
-            await fakeMailSender.SendEmailAsync(mail);
-
+            //var response = await httpClient.PostAsJsonAsync<FakeMailSender>("/send" , mailInfo);
+            var response = await httpClient.PostAsJsonAsync<MailRequest>("/send", mailInfo);
+            await fakeMailSender.SendEmailAsync(mailInfo);
 
             // Assert
-            fakeMailSender.FakeMailRequest.Should().BeEquivalentTo(mail);
-            fakeMailSender.FakeMailRequest.ToDisplayName.Should().Be("Test");
-            fakeMailSender.FakeMailRequest.Body.Should().Be("Hello");   
-            fakeMailSender.FakeMailRequest.ToEmail.Should().Be("test@gmail.com");
-            fakeMailSender.FakeMailRequest.Attachments.Should().BeNull();
-            //response.Should().NotBeNull();
+            fakeMailSender.MailRequest.Should().BeEquivalentTo(mailInfo);
+            fakeMailSender.MailRequest.ToDisplayName.Should().Be("Test");
+            fakeMailSender.MailRequest.Body.Should().Be("Hello");   
+            fakeMailSender.MailRequest.ToEmail.Should().Be("test@gmail.com");
+            fakeMailSender.MailRequest.Attachments.Should().BeNull();
+            response.Should().NotBeNull();
         }
 
         public void Setup(IWebHostBuilder builder)
         {
             builder.ConfigureTestServices(services =>
             {
-                services.AddTransient<FakeMailSender>();
+                services.AddSingleton<IMailService>(fakeMailSender);
             });
         }
 
@@ -111,7 +112,6 @@ namespace EmailTesting
             content.Should().Contain("F. Scott fitzgerald");
            response.Should().NotBeNull();
         }
-
 
         [Test]
         public async Task Update_book_Details()

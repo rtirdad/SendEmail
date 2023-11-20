@@ -28,7 +28,7 @@ namespace SendEmail
             builder.Services.AddControllers();
 
             // Correct the namespace if necessary
-            builder.Services.AddTransient<IMailService, MailService>();
+            builder.Services.AddSingleton<IMailService, MailService>();
             builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 
             builder.Services.AddEndpointsApiExplorer();
@@ -102,7 +102,6 @@ namespace SendEmail
             app.MapGet("hello", () => "Hello World!");
 
             app.Run();
-
         }
         public class Book
         {
