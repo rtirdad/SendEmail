@@ -107,7 +107,7 @@ namespace EmailTesting
             var content = await response.Content.ReadAsStringAsync();
 
            //Assert
-           Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+           response.StatusCode.Should().Be(HttpStatusCode.OK);
            content.Should().Contain("The great Gatsby");
             content.Should().Contain("F. Scott fitzgerald");
            response.Should().NotBeNull();
@@ -146,7 +146,7 @@ namespace EmailTesting
             // Act
             var httpClient = factory.CreateClient();
 
-            var idToDelete = 2;
+            var idToDelete = 1;
             var response = await httpClient.PutAsJsonAsync($"/book/{idToDelete}", new Program.Book());
 
             var content = await response.Content.ReadAsStringAsync();

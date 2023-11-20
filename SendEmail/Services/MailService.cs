@@ -7,7 +7,6 @@ using SendEmail.Models;
 using SendEmail.Settings;
 using System.Net.Mail;
 using MimeKit.Text;
-
 using MailKit.Security;
 using System.Dynamic;
 
@@ -50,8 +49,6 @@ namespace SendEmail.Services
                     }
                 }
             }
-            builder.HtmlBody = mailrequest.Body;
-            email.Body = builder.ToMessageBody();
             await _fakeMailSender.SendEmailAsync(mailrequest);
         }
     }

@@ -33,7 +33,7 @@ namespace SendEmail.Services
 
         public string Body { get; set; }
 
-        public IFormFileCollection? Attachments { get; set; }*/
+        public IFormFileCollection? Attachments {get; set;}*/
 
         public MailRequest MailRequest { get; set; }
 
@@ -59,7 +59,6 @@ namespace SendEmail.Services
     }
     public class MailKitSender : IMailService
     {
-        
         private readonly MailSettings _mailSettings;
 
         public MailKitSender(MailSettings mailSettings)

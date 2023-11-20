@@ -29,13 +29,14 @@ namespace SendEmail.Controllers
             {
                 await _mailService.SendEmailAsync(request);
                 //await _fakeSender.SendEmailAsync(request);
+
                 _logger.LogInformation("Email sent successfully :)");
                 return Ok();
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                _logger.LogError("An error occured, email send unsuccessfully :(");
+                _logger.LogError(ex, "An error occured, email send unsuccessfully :(");
                 return StatusCode(StatusCodes.Status500InternalServerError, "An error occured. The Mail could not be sent.");
             }
         }
