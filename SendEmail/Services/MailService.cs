@@ -49,6 +49,8 @@ namespace SendEmail.Services
                     }
                 }
             }
+            builder.HtmlBody = mailrequest.Body;
+            email.Body = builder.ToMessageBody();
             await _fakeMailSender.SendEmailAsync(mailrequest);
         }
     }
