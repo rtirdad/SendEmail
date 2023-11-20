@@ -36,7 +36,7 @@ namespace EmailTesting
                 FromMail = "test@gmail.com",
                 Subject = "Testing",
                 Body = "Hello",
-                Attachments = { }
+                Attachments = {}
             };
 
             // Act

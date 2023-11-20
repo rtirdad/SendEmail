@@ -27,8 +27,8 @@ namespace SendEmail.Controllers
         {
             try
             {
-                //await _mailService.SendEmailAsync(request);
-                await _fakeSender.SendEmailAsync(request);
+                await _mailService.SendEmailAsync(request);
+                //await _fakeSender.SendEmailAsync(request);
                 _logger.LogInformation("Email sent successfully :)");
                 return Ok();
 
