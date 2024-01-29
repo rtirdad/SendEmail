@@ -1,0 +1,44 @@
+2024-01-29 10:59:29.138 +01:00  DBG  Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-01-29 10:59:29.288 +01:00  DBG  Hosting starting
+2024-01-29 10:59:29.741 +01:00  INF  Now listening on: https://localhost:7117
+2024-01-29 10:59:29.741 +01:00  INF  Now listening on: http://localhost:5066
+2024-01-29 10:59:29.741 +01:00  DBG  Loaded hosting startup assembly SendEmail
+2024-01-29 10:59:29.741 +01:00  DBG  Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-01-29 10:59:29.741 +01:00  DBG  Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-01-29 10:59:29.742 +01:00  INF  Application started. Press Ctrl+C to shut down.
+2024-01-29 10:59:29.742 +01:00  INF  Hosting environment: Development
+2024-01-29 10:59:29.742 +01:00  INF  Content root path: C:\Users\CityGIS\Desktop\C#\SendEmail\SendEmail\SendEmail
+2024-01-29 10:59:29.742 +01:00  DBG  Hosting started
+2024-01-29 10:59:30.162 +01:00  DBG  Connection id "0HN10M3U79CUJ" accepted.
+2024-01-29 10:59:30.162 +01:00  DBG  Connection id "0HN10M3U79CUI" accepted.
+2024-01-29 10:59:30.164 +01:00  DBG  Connection id "0HN10M3U79CUJ" started.
+2024-01-29 10:59:30.164 +01:00  DBG  Connection id "0HN10M3U79CUI" started.
+2024-01-29 10:59:30.592 +01:00  DBG  Connection id "0HN10M3U79CUK" accepted.
+2024-01-29 10:59:30.593 +01:00  DBG  Connection id "0HN10M3U79CUK" started.
+2024-01-29 10:59:30.658 +01:00  DBG  Connection 0HN10M3U79CUK established using the following protocol: "Tls12"
+2024-01-29 10:59:30.792 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/index.html - -
+2024-01-29 10:59:30.846 +01:00  DBG  Wildcard detected, all requests with hosts will be allowed.
+2024-01-29 10:59:30.977 +01:00  DBG  No candidates found for the request path '/swagger/index.html'
+2024-01-29 10:59:30.978 +01:00  DBG  Request did not match any endpoints
+2024-01-29 10:59:31.082 +01:00  DBG  Response markup is scheduled to include browser refresh script injection.
+2024-01-29 10:59:31.309 +01:00  DBG  Response markup was updated to include browser refresh script injection.
+2024-01-29 10:59:31.311 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/index.html - - - 200 - text/html;charset=utf-8 520.6173ms
+2024-01-29 10:59:31.321 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - -
+2024-01-29 10:59:31.321 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/_vs/browserLink - -
+2024-01-29 10:59:31.336 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 15.5117ms
+2024-01-29 10:59:31.411 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 90.6122ms
+2024-01-29 10:59:31.457 +01:00  INF  Request starting HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - -
+2024-01-29 10:59:31.458 +01:00  DBG  No candidates found for the request path '/swagger/v1/swagger.json'
+2024-01-29 10:59:31.458 +01:00  DBG  Request did not match any endpoints
+2024-01-29 10:59:31.575 +01:00  INF  Request finished HTTP/2 GET https://localhost:7117/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.7101ms
+2024-01-29 10:59:35.742 +01:00  DBG  Connection id "0HN10M3U79CUK" received FIN.
+2024-01-29 10:59:35.748 +01:00  DBG  The connection queue processing loop for 0HN10M3U79CUK completed.
+2024-01-29 10:59:35.750 +01:00  DBG  Connection id "0HN10M3U79CUK" is closed. The last processed stream ID was 7.
+2024-01-29 10:59:35.752 +01:00  DBG  Connection id "0HN10M3U79CUK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-29 10:59:35.755 +01:00  DBG  Connection id "0HN10M3U79CUK" stopped.
+2024-01-29 10:59:40.199 +01:00  DBG  Authentication of the HTTPS connection timed out.
+2024-01-29 10:59:40.199 +01:00  DBG  Authentication of the HTTPS connection timed out.
+2024-01-29 10:59:40.200 +01:00  DBG  Connection id "0HN10M3U79CUJ" stopped.
+2024-01-29 10:59:40.200 +01:00  DBG  Connection id "0HN10M3U79CUI" stopped.
+2024-01-29 10:59:40.200 +01:00  DBG  Connection id "0HN10M3U79CUJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-29 10:59:40.200 +01:00  DBG  Connection id "0HN10M3U79CUI" sending FIN because: "The Socket transport's send loop completed gracefully."
