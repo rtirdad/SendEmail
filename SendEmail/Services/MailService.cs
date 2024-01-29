@@ -9,6 +9,7 @@ using System.Net.Mail;
 using MimeKit.Text;
 
 using MailKit.Security;
+using System.Text.Json;
 
 namespace SendEmail.Services
 {
@@ -31,22 +32,19 @@ namespace SendEmail.Services
             email.Subject = mailrequest.Subject;
             var builder = new BodyBuilder();
 
-            if (mailrequest.Attachments != null)
+            byte[] fileBytes;
+            if (System.IO.File.Exists("Attachment/report.pdf"))
             {
-                byte[] fileBytes;
-                foreach (var file in mailrequest.Attachments)
+                FileStream file = new FileStream("Attachment/report.pdf", FileMode.Open, FileAccess.Read);
+                using (var ms = new MemoryStream())
                 {
-                    if (file.Length > 0)
-                    {
-                        using (var ms = new MemoryStream())
-                        {
-                            file.CopyTo(ms);
-                            fileBytes = ms.ToArray();
-                        }
-                        builder.Attachments.Add(file.FileName, fileBytes, ContentType.Parse(file.ContentType));
-                    }
+                    file.CopyTo(ms);
+                    fileBytes = ms.ToArray();
                 }
+                builder.Attachments.Add("attachment.pdf", fileBytes, ContentType.Parse("application/pdf"));
+                //builder.Attachments.Add("attachment2.pdf", fileBytes, ContentType.Parse("application/octet-stream"));
             }
+
             builder.HtmlBody = mailrequest.Body;
             email.Body = builder.ToMessageBody();
             using var smtp = new MailKit.Net.Smtp.SmtpClient();
@@ -54,6 +52,11 @@ namespace SendEmail.Services
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
             await smtp.SendAsync(email);
             smtp.Disconnect(true);
+        }
+
+        public void GeneratePDF(JsonDocument doc, HttpContext context) 
+        {
+        
         }
     }
 }

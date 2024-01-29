@@ -1,4 +1,6 @@
-﻿namespace SendEmail.Models
+﻿using System.Text.Json;
+
+namespace SendEmail.Models
 {
     public class MailRequest
     {
@@ -17,5 +19,12 @@
         public string Body { get; set; }
 
         public IFormFileCollection? Attachments { get; set; }
+
+        public string JsonData { get; set; } 
+
+        public JsonElement GetJsonDataAsJsonElement()
+        {
+            return JsonDocument.Parse(JsonData).RootElement;
+        }
     }
 }
