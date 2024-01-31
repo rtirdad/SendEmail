@@ -55,13 +55,12 @@ namespace SendEmail.Services
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
             await smtp.SendAsync(email);
-            await ReportService; 
             smtp.Disconnect(true);
         }
 
         public MemoryStream GenerateReportAndReturnStream(JsonDocument doc)
         {
-            var reportService = new ReportService(); // You might want to inject this service instead of creating a new instance
+            var reportService = new ReportService(); 
             return reportService.GenerateReport(doc);
         }
     }
