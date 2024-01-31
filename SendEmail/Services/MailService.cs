@@ -25,13 +25,12 @@ namespace SendEmail.Services
         public async Task SendEmailAsync(MailRequest mailrequest)
         {
             var email = new MimeMessage();
-            email.From.Add(new MailboxAddress(mailrequest.FromDisplayName, mailrequest.FromMail));
+            email.From.Add(new MailboxAddress(mailrequest.FromDisplayName, _mailSettings.Mail));
             email.To.Add(new MailboxAddress(mailrequest.ToDisplayName, mailrequest.ToEmail));
 
             email.Subject = mailrequest.Subject;
             var builder = new BodyBuilder();
 
-            // Attach the generated PDF directly
             var reportStream = _reportService.GenerateReport(mailrequest.JsonData);
             builder.Attachments.Add("report.pdf", reportStream.ToArray(), ContentType.Parse("application/pdf"));
 
@@ -40,7 +39,7 @@ namespace SendEmail.Services
 
             using var smtp = new SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
-            smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
+            smtp.Authenticate(_mailSettings.Mail, _mailSettings.Password);
             await smtp.SendAsync(email);
             smtp.Disconnect(true);
         }
