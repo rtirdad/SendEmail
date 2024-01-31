@@ -28,7 +28,6 @@ namespace SendEmail.Controllers
             try
             {
                 await _mailService.SendEmailAsync(request);
-
                 _logger.LogInformation("Email sent successfully :)");
                 return Ok();
             }
