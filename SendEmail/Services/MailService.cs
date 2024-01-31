@@ -7,9 +7,10 @@ using SendEmail.Models;
 using SendEmail.Settings;
 using System.Net.Mail;
 using MimeKit.Text;
-
 using MailKit.Security;
 using System.Text.Json;
+using GemBox.Document;
+using System.Text.RegularExpressions;
 
 namespace SendEmail.Services
 {
@@ -22,31 +23,34 @@ namespace SendEmail.Services
             _mailSettings = options.Value;
         }
 
-        public async Task SendEmailAsync(MailRequest mailrequest)
+        public async Task SendEmailAsync(MailRequest mailrequest, List<IFormFile> attachments)
         {
             var email = new MimeMessage();
             email.From.Add(new MailboxAddress(mailrequest.FromDisplayName, mailrequest.FromMail));
-            //email.Sender = MailboxAddress.Parse(mailrequest.FromAppPassword);
             email.To.Add(new MailboxAddress(mailrequest.ToDisplayName, mailrequest.ToEmail));
 
             email.Subject = mailrequest.Subject;
             var builder = new BodyBuilder();
 
-            byte[] fileBytes;
-            if (System.IO.File.Exists("Attachment/report.pdf"))
+            if (attachments != null && attachments.Count > 0)
             {
-                FileStream file = new FileStream("Attachment/report.pdf", FileMode.Open, FileAccess.Read);
-                using (var ms = new MemoryStream())
+                foreach (var file in attachments)
                 {
-                    file.CopyTo(ms);
-                    fileBytes = ms.ToArray();
+                    if (file != null && file.Length > 0)
+                    {
+                        using (var ms = new MemoryStream())
+                        {
+                            file.CopyTo(ms);
+                            var fileBytes = ms.ToArray();
+                            builder.Attachments.Add(file.FileName, fileBytes, ContentType.Parse(file.ContentType));
+                        }
+                    }
                 }
-                builder.Attachments.Add("attachment.pdf", fileBytes, ContentType.Parse("application/pdf"));
-                //builder.Attachments.Add("attachment2.pdf", fileBytes, ContentType.Parse("application/octet-stream"));
             }
 
             builder.HtmlBody = mailrequest.Body;
             email.Body = builder.ToMessageBody();
+
             using var smtp = new MailKit.Net.Smtp.SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
@@ -57,6 +61,12 @@ namespace SendEmail.Services
         public void GeneratePDF(JsonDocument doc, HttpContext context) 
         {
         
+        }
+
+        public MemoryStream GenerateReportAndReturnStream(JsonDocument doc)
+        {
+            var reportService = new ReportService(); // You might want to inject this service instead of creating a new instance
+            return reportService.GenerateReport(doc);
         }
     }
 }

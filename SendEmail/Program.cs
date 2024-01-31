@@ -18,6 +18,7 @@ builder.Logging.AddSerilog(logger);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddSingleton<ReportService>();
 
 builder.Services.AddTransient<IMailService, MailService>();
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));

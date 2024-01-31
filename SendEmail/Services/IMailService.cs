@@ -5,7 +5,7 @@ namespace SendEmail.Services
 {
     public interface IMailService
     {
-        Task SendEmailAsync(MailRequest mailrequest);
+        Task SendEmailAsync(MailRequest mailrequest, List<IFormFile> attachments);
 
     }
 }
