@@ -8,10 +8,15 @@ namespace SendEmail.Models
         public string ToEmail { get; set; }
         public string ToDisplayName { get; set; }
         public string FromDisplayName { get; set; }
+
         //public string FromMail { get; set; }
+
         public string Subject { get; set; }
+
         public string Body { get; set; }
-        //public IFormFile? Attachments { get; set; } 
+
+        //public IFormFile? Attachments { get; set; }
+        
         public string JsonData { get; set; }
 
         public JsonElement GetJsonDataAsJsonElement() => JsonDocument.Parse(JsonData).RootElement;
