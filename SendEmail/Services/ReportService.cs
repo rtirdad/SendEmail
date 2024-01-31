@@ -2,20 +2,18 @@
 using System.IO;
 using System.Text.Json;
 using System.Text.RegularExpressions;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using GemBox.Document;
 
 namespace SendEmail.Services
 {
     public class ReportService
     {
-        public MemoryStream GenerateReport(JsonDocument doc)
+        public MemoryStream GenerateReport(string jsonData)
         {
             ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
             var templateDirectory = @".\Templates";
-            var docRoot = doc.RootElement;
+            var docRoot = JsonDocument.Parse(jsonData).RootElement;
 
             var docFormat = docRoot.GetProperty("format").ToString();
             var templateName = docRoot.GetProperty("template").ToString();
@@ -39,7 +37,7 @@ namespace SendEmail.Services
                 {
                     current = current.GetProperty(part);
                 }
-                Console.WriteLine(current.ToString());
+
                 document.Content.Replace(inWordSomewhere, current.ToString());
             }
 
@@ -51,15 +49,9 @@ namespace SendEmail.Services
             using var pdfStream = new MemoryStream();
             var memoryStream = new MemoryStream();
 
-            pdfStream.CopyTo(memoryStream);
-            memoryStream.Position = 0;
-
             document.Save(memoryStream, pdfSaveOptions);
 
             return memoryStream;
         }
     }
-
 }
-
-

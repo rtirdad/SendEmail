@@ -1,29 +1,28 @@
-﻿using MailKit.Net.Smtp;
-using Microsoft.AspNetCore.Identity;
+﻿using System.IO;
+using System.Threading.Tasks;
+using GemBox.Document;
+using MailKit.Net.Smtp;
 using Microsoft.Extensions.Options;
 using MimeKit;
-using MailKit;
-using SendEmail.Models;
-using SendEmail.Settings;
-using System.Net.Mail;
 using MimeKit.Text;
 using MailKit.Security;
-using System.Text.Json;
-using GemBox.Document;
-using System.Text.RegularExpressions;
+using SendEmail.Models;
+using SendEmail.Settings;
 
 namespace SendEmail.Services
 {
     public class MailService : IMailService
     {
         private readonly MailSettings _mailSettings;
+        private readonly ReportService _reportService;
 
-        public MailService(IOptions<MailSettings> options)
+        public MailService(IOptions<MailSettings> options, ReportService reportService)
         {
             _mailSettings = options.Value;
+            _reportService = reportService;
         }
 
-        public async Task SendEmailAsync(MailRequest mailrequest, List<IFormFile> attachments)
+        public async Task SendEmailAsync(MailRequest mailrequest)
         {
             var email = new MimeMessage();
             email.From.Add(new MailboxAddress(mailrequest.FromDisplayName, mailrequest.FromMail));
@@ -32,36 +31,18 @@ namespace SendEmail.Services
             email.Subject = mailrequest.Subject;
             var builder = new BodyBuilder();
 
-            if (attachments != null && attachments.Count > 0)
-            {
-                foreach (var file in attachments)
-                {
-                    if (file != null && file.Length > 0)
-                    {
-                        using (var ms = new MemoryStream())
-                        {
-                            file.CopyTo(ms);
-                            var fileBytes = ms.ToArray();
-                            builder.Attachments.Add(file.FileName, fileBytes, ContentType.Parse(file.ContentType));
-                        }
-                    }
-                }
-            }
+            // Attach the generated PDF directly
+            var reportStream = _reportService.GenerateReport(mailrequest.JsonData);
+            builder.Attachments.Add("report.pdf", reportStream.ToArray(), ContentType.Parse("application/pdf"));
 
             builder.HtmlBody = mailrequest.Body;
             email.Body = builder.ToMessageBody();
 
-            using var smtp = new MailKit.Net.Smtp.SmtpClient();
+            using var smtp = new SmtpClient();
             smtp.Connect(_mailSettings.Host, _mailSettings.Port, SecureSocketOptions.StartTls);
             smtp.Authenticate(mailrequest.FromMail, _mailSettings.Password);
             await smtp.SendAsync(email);
             smtp.Disconnect(true);
-        }
-
-        public MemoryStream GenerateReportAndReturnStream(JsonDocument doc)
-        {
-            var reportService = new ReportService(); 
-            return reportService.GenerateReport(doc);
         }
     }
 }
