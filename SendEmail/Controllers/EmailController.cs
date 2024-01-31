@@ -5,6 +5,7 @@ using SendEmail.Services;
 using System;
 using System.Threading.Tasks;
 using Serilog;
+using System.Text.Json;
 
 namespace SendEmail.Controllers
 {

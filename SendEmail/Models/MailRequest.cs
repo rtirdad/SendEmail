@@ -20,11 +20,8 @@ namespace SendEmail.Models
 
         public IFormFileCollection? Attachments { get; set; }
 
-        public string JsonData { get; set; } 
+        public string JsonData { get; set; }
 
-        public JsonElement GetJsonDataAsJsonElement()
-        {
-            return JsonDocument.Parse(JsonData).RootElement;
-        }
+        public JsonElement GetJsonDataAsJsonElement() => JsonDocument.Parse(JsonData).RootElement;
     }
 }
