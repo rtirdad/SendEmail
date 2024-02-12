@@ -5,6 +5,7 @@ using SendEmail.Services;
 using System;
 using System.Threading.Tasks;
 using Serilog;
+using System.Text.Json;
 
 namespace SendEmail.Controllers
 {
@@ -29,12 +30,11 @@ namespace SendEmail.Controllers
                 await _mailService.SendEmailAsync(request);
                 _logger.LogInformation("Email sent successfully :)");
                 return Ok();
-
             }
             catch (Exception ex)
             {
-                _logger.LogError("An error occured, email send unsuccessfully :(");
-                return StatusCode(StatusCodes.Status500InternalServerError, "An error occured. The Mail could not be sent.");
+                _logger.LogError("An error occurred, email send unsuccessfully :(");
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred. The Mail could not be sent.");
             }
         }
     }
