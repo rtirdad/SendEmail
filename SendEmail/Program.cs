@@ -30,7 +30,6 @@ builder.Services.AddCors(c =>
     c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
 });
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -94,8 +93,5 @@ app.MapPost("/report", (JsonDocument doc, HttpContext context) =>
 })
 
 .WithName("Report")
-
 .WithOpenApi();
-
-
 app.Run();

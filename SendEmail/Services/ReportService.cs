@@ -37,7 +37,6 @@ namespace SendEmail.Services
                 {
                     current = current.GetProperty(part);
                 }
-
                 document.Content.Replace(inWordSomewhere, current.ToString());
             }
 
