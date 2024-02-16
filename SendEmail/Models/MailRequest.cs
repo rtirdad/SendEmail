@@ -9,7 +9,7 @@ namespace SendEmail.Models
         public string ToDisplayName { get; set; }
         public string FromDisplayName { get; set; }
 
-        //public string FromMail { get; set; }
+        public string FromMail { get; set; }
 
         public string Subject { get; set; }
 
@@ -17,8 +17,8 @@ namespace SendEmail.Models
 
         //public IFormFile? Attachments { get; set; }
         
-        public string JsonData { get; set; }
+        //public string JsonData { get; set; }
 
-        public JsonElement GetJsonDataAsJsonElement() => JsonDocument.Parse(JsonData).RootElement;
+        //public JsonElement GetJsonDataAsJsonElement() => JsonDocument.Parse(JsonData).RootElement;
     }
 }
